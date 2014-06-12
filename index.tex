@@ -2,15 +2,16 @@
 
 \reversemarginpar % Move the margin to the left of the page 
 
-\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
-
+\usepackage[swedish]{babel}
 \usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
 \usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+\usepackage{hyperref} % Required for adding links	and customizing them
 
 \renewcommand{\cvheadingfont}{\LARGE\color{NavyBlue}} % Font color of your name at the top
 
-\usepackage{hyperref} % Required for adding links	and customizing them
 \hypersetup{colorlinks, breaklinks, urlcolor=NavyBlue, linkcolor=NavyBlue} % Set link colors
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
 
 \newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
 
@@ -45,7 +46,7 @@
 
 \noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
 
-\Description{I want to solve problems to make life easier for everyone.}\vspace{2em} % Goal text
+\Description{I want to solve problems in order to make life easier for everyone.}\vspace{2em} % Goal text
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -55,13 +56,13 @@
 
 \NewEntry{2013--2014}{Head of Corporate Relations}
 
-\Description{\MarginText{Datateknologsektionen}Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\ Reference: John \textsc{McDonald}\ \ $\cdotp$\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:john@lehman.com}{john@lehman.com}}
+\Description{\MarginText{CS Department}Me and my comitee handled all the communication between companies in Linköping and the students at our department. We arranged events that gave them opportunities to connect to a more personal level. I met with a lot of companies which boosted my social and communicational skills.}
 
 %------------------------------------------------
 
-\NewEntry{2010--2011}{Summer Intern, \textsc{Initech Inc}  --- Chicago}
+\NewEntry{Fall 2013}{PBL Group Supervisor}
 
-\Description{\MarginText{Initech Inc}Rated "truly distinctive" for Analytical Skills and Teamwork. \\ Reference: Bill \textsc{Lumbergh}\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:bill@initech.com}{bill@initech.com}}
+\Description{\MarginText{Supervisor}I supervised a group of seven younger students during their meetings two times per week.}
 
 %------------------------------------------------
 
@@ -73,16 +74,15 @@
 
 \spacedlowsmallcaps{Education}\vspace{1em}
 
-\NewEntry{2011-2016}{University of Technology, Linkoping}
+\NewEntry{2011-2016}{The Institute of Technology at Linköping University}
 
 \Description{\MarginText{Master of Computer Science}A selection of courses: Data Structures and Algorithms, Intuitive Systems, Secure Mobile Networks, Linear Algebra.}
 
 %------------------------------------------------
 
-\NewEntry{2007-2010}{The University of California, Berkeley}
+\NewEntry{2006-2009}{High School, Nynäshamn}
 
-\Description{\MarginText{Bachelor of Business Studies}GPA: 7.5\ \ $\cdotp$\ \ \textit{Commerce Specialization}\ \ $\cdotp$\ \ School: Business and Administration\newline
-Description: This degree focussed heavily on important things such as personnel management and mundane paperwork.}
+\Description{\MarginText{High School}Science and math. I also studied Database Managment, PHP, JAVA and CAD.}
 
 %------------------------------------------------
 
@@ -94,19 +94,10 @@ Description: This degree focussed heavily on important things such as personnel 
 
 \spacedlowsmallcaps{Publications}\vspace{1em}
 
-\NewEntry{January 2013}{Publication Title}
+\NewEntry{Spring, 2014}{Twitter as the Second Channel}
 
-\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
-
-%------------------------------------------------
-
-\NewEntry{Sept. 2012}{Publication Title}
-
-\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
-
-%------------------------------------------------
-
-\vspace{1em} % Extra space between major sections
+\Description{\MarginText{Bachelor Thesis}By collecting tweets related to the Eurovision Song Contest we tried to predict the winner of the competition. We did so by analysing each tweet in terms of sentiment and figuring out which acts were mentioned.
+\\ Authors: Matteus \textsc{Hemström}, ~Anton \textsc{Niklasson}}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS
@@ -114,60 +105,18 @@ Description: This degree focussed heavily on important things such as personnel 
 
 \spacedlowsmallcaps{Computer Skills}\vspace{1em}
 
-\Description{\MarginText{Basic}\textsc{java}, Adobe Illustrator}
+\Description{\MarginText{Basic}CAD, Illustrator}
 
-\Description{\MarginText{Intermediate}\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+\Description{\MarginText{Intermediate}C\#, Java, Android, Photoshop}
 
-\Description{\MarginText{Advanced}Computer Hardware and Support}
+\Description{\MarginText{Advanced}PHP, Web design, Databases}
 
 %------------------------------------------------
 
 \vspace{1em} % Extra space between major sections
 
-%----------------------------------------------------------------------------------------
-%	OTHER INFORMATION
-%----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Other Information}\vspace{1em}
-
-\Description{\MarginText{Awards}2011\ \ $\cdotp$\ \ School of Business Postgraduate Scholarship}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{2010\ \ $\cdotp$\ \ Top Achiever Award -- Commerce}
-
-%------------------------------------------------
-
-\vspace{1em}
-
-\Description{\MarginText{Communication Skills}2010\ \ $\cdotp$\ \ Oral Presentation at the California Business Conference}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{2009\ \ $\cdotp$\ \ Poster at the Annual Business Conference in Oregon}
-
-%------------------------------------------------
-
-\vspace{1em}
-
-\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
-\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
-
-\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Mothertongue}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{\parbox{\langbox}{\textsc{Spanish}}\ \ $\cdotp$\ \ \ Intermediate (conversationally fluent)}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{\parbox{\langbox}{\textsc{Dutch}}\ \ $\cdotp$\ \ \ Basic (simple words and phrases only)}
-
-\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
-
-%------------------------------------------------
-
-\Description{\MarginText{Interests}Piano\ \ $\cdotp$\ \ Cooking\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \ Chess\ \ $\cdotp$\ \ Dancing}
+\Description{\MarginText{Interests}Cooking\ \ $\cdotp$\ \ Photography\ \ $\cdotp$\ \ TED Talks\ \ $\cdotp$\ \ Traveling}
 
 %----------------------------------------------------------------------------------------
 
