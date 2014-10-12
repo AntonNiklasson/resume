@@ -4,14 +4,15 @@
   box-sizing: border-box; }
 
 body {
-  font: 15px sans-serif; }
+  font: 15px sans-serif;
+  color: #333; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia;
   font-weight: normal; }
 
 h1 {
-  font-size: 4.2rem; }
+  font-size: 4rem; }
 
 h2 {
   font-size: 3rem; }
@@ -26,35 +27,50 @@ h5 {
   font-size: 1.5rem; }
 
 h6 {
-  font-size: 1.2rem; }
+  font-size: 1rem; }
 
-::selection {
-  background: tomato;
-  color: white; }
+a {
+  text-decoration: underline;
+  color: tomato; }
 
 .site-wrap {
   width: 800px;
   margin: 0 auto; }
 
-header {
+.site-wrap > header {
   padding: 2rem 0 1rem 0;
+  margin: 0 0 2rem 0;
   text-align: center;
   border-bottom: 1px solid gray; }
-  header h1 {
+  .site-wrap > header h1 {
     font-size: 4.5rem; }
-  header ul.contacts {
+  .site-wrap > header ul.contacts {
     margin: 1rem 0;
     list-style: none; }
-    header ul.contacts li {
+    .site-wrap > header ul.contacts li {
       margin: 0.2rem 0;
       font-size: 1.2rem; }
+  .site-wrap > header ul.socials {
+    list-style: none;
+    font-size: 0.9em; }
+    .site-wrap > header ul.socials li {
+      display: inline; }
 
 section {
   padding: 1rem 0;
   border-bottom: 1px solid gray; }
+  section h2 {
+    border-left: 0.7rem solid tomato;
+    padding: 0.5rem 1rem; }
 
 .item {
-  padding: 1rem; }
+  overflow: hidden;
+  padding: 1rem;
+  border-bottom: 1px solid #CCC; }
+  .item:last-child {
+    border: none; }
+  .item header {
+    overflow: hidden; }
   .item h3 {
     font-size: 1.5em; }
     .item h3 strong {
@@ -62,8 +78,13 @@ section {
       font-weight: bold;
       font-size: 0.8em;
       color: #666; }
+  .item img {
+    float: right;
+    border: 1px solid #CCC;
+    border-radius: 3px; }
+
+.education-item img {
+  max-width: 220px; }
 
 footer {
   padding: 1rem; }
-
-/*# sourceMappingURL=style.css.map */
