@@ -105,11 +105,19 @@ section {
 	width: 80%;
 	margin: 1rem auto;
 	font-size: 1.3rem;
+	font-weight: bold;
 
 	td {
 		width: 50%;
 		border-bottom: 1px solid #CCC;
 		padding: 1.5rem 0;
+	}
+	tr:last-child td {
+		border: none;
+	}
+	td:nth-child(2) {
+		font-weight: normal;
+		font-style: italic;
 	}
 	th {
 		text-align: left;
@@ -120,7 +128,7 @@ section {
 		height: 20px;
 		position: relative;
 		background: #EEE;
-		border: 3px solid #AAA;
+		border: 2px solid #CCC;
 		border-radius: 1rem;
 		overflow: hidden;
 		span {
