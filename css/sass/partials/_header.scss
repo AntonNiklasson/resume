@@ -1,0 +1,50 @@
+.site-wrap > header {
+	padding: 2rem 0 1rem 0;
+	margin: 0 0 2rem 0;
+	text-align: center;
+	border-bottom: 1px solid #AAA;
+
+	h1 {
+		font-size: 4.5rem;
+		text-transform: uppercase;
+	}
+
+	ul.contacts {
+		margin: 2rem 0;
+		list-style: none;
+		font-weight: normal;
+		color: #333;
+		li {
+			margin: 0.2rem 0;
+			font-size: 1.2rem;
+		}
+	}
+	ul.socials {
+		list-style: none;
+		font-size: 2rem;
+		li {
+			display: inline;
+			margin: 0 1rem;
+
+			i {
+				color: $color;
+				font-size: 1.2em;
+
+				transition: transform 0.8s ease, color 0.5s ease;
+			}
+			i:hover {
+				transform: rotate(20deg);
+				color: #222;
+			}
+			&:nth-child(1) i:hover {
+				color: #111;
+			}
+			&:nth-child(2) i:hover {
+				color: #1b5480;
+			}
+			&:nth-child(3) i:hover {
+				color: #FF9900;
+			}
+		}
+	}
+}

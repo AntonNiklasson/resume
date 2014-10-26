@@ -1,3 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+.site-wrap > header {
+  padding: 2rem 0 1rem 0;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  border-bottom: 1px solid #AAA; }
+  .site-wrap > header h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase; }
+  .site-wrap > header ul.contacts {
+    margin: 2rem 0;
+    list-style: none;
+    font-weight: normal;
+    color: #333; }
+    .site-wrap > header ul.contacts li {
+      margin: 0.2rem 0;
+      font-size: 1.2rem; }
+  .site-wrap > header ul.socials {
+    list-style: none;
+    font-size: 2rem; }
+    .site-wrap > header ul.socials li {
+      display: inline;
+      margin: 0 1rem; }
+      .site-wrap > header ul.socials li i {
+        color: #A00043;
+        font-size: 1.2em;
+        transition: transform 0.8s ease, color 0.5s ease; }
+      .site-wrap > header ul.socials li i:hover {
+        transform: rotate(20deg);
+        color: #222; }
+      .site-wrap > header ul.socials li:nth-child(1) i:hover {
+        color: #111; }
+      .site-wrap > header ul.socials li:nth-child(2) i:hover {
+        color: #1b5480; }
+      .site-wrap > header ul.socials li:nth-child(3) i:hover {
+        color: #FF9900; }
+
+.item {
+  overflow: hidden;
+  padding: 2rem;
+  border-bottom: 1px solid #CCC; }
+  .item:last-child {
+    border: none; }
+  .item header {
+    overflow: hidden; }
+  .item h3 {
+    font-size: 1.7em; }
+    .item h3 span {
+      display: block;
+      color: gray;
+      font-size: 0.7em;
+      font-family: sans-serif;
+      font-weight: bold; }
+  .item img {
+    float: right;
+    border: 1px solid #CCC;
+    border-radius: 3px; }
+  .item p {
+    font-size: 1rem;
+    margin: 1rem 0 0 0; }
+
+.education-item img {
+  width: 200px; }
+
+.skills-table {
+  width: 90%;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 1px solid #BBB;
+  border-collapse: collapse; }
+  .skills-table td {
+    width: 50%;
+    border: 1px solid #BBB;
+    padding: 1.5rem; }
+  .skills-table td:nth-child(2) {
+    font-weight: normal;
+    font-style: italic; }
+  .skills-table ul {
+    list-style: square;
+    color: #444;
+    font-size: 0.7em;
+    margin: 0.2rem 2rem;
+    font-weight: normal; }
+  .skills-table .skillpoints {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    background: #EEE;
+    border: 2px solid #CCC;
+    border-radius: 1rem;
+    overflow: hidden; }
+    .skills-table .skillpoints span {
+      display: block;
+      width: 50%;
+      height: 100%;
+      background: cornflowerblue; }
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +106,7 @@ body {
   color: #333; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia;
+  font-family: 'Bree Serif', serif;
   font-weight: normal; }
 
 h1 {
@@ -37,85 +135,12 @@ a {
   width: 800px;
   margin: 1rem auto; }
 
-.site-wrap > header {
-  padding: 2rem 0 1rem 0;
-  margin: 0 0 2rem 0;
-  text-align: center;
-  border-bottom: 1px solid gray; }
-  .site-wrap > header h1 {
-    font-size: 4.5rem; }
-  .site-wrap > header ul.contacts {
-    margin: 1rem 0;
-    list-style: none; }
-    .site-wrap > header ul.contacts li {
-      margin: 0.2rem 0;
-      font-size: 1.2rem; }
-  .site-wrap > header ul.socials {
-    list-style: none;
-    font-size: 2rem; }
-    .site-wrap > header ul.socials li {
-      display: inline;
-      margin: 0 0.5rem; }
-
 section {
-  padding: 1rem 0;
-  border-bottom: 1px solid gray; }
+  margin: 0 0 2rem 0;
+  padding: 1rem 0; }
   section h2 {
-    border-left: 0.7rem solid tomato;
+    border-left: 0.7rem solid #A00043;
     padding: 0.5rem 1rem; }
-
-.item {
-  overflow: hidden;
-  padding: 1rem;
-  border-bottom: 1px solid #CCC; }
-  .item:last-child {
-    border: none; }
-  .item header {
-    overflow: hidden; }
-  .item h3 {
-    font-size: 1.5em; }
-    .item h3 strong {
-      font-family: sans-serif;
-      font-weight: bold;
-      font-size: 0.8em;
-      color: #666; }
-  .item img {
-    float: right;
-    border: 1px solid #CCC;
-    border-radius: 3px; }
-
-.education-item img {
-  max-width: 220px; }
-
-.skills-table {
-  width: 80%;
-  margin: 1rem auto;
-  font-size: 1.3rem;
-  font-weight: bold; }
-  .skills-table td {
-    width: 50%;
-    border-bottom: 1px solid #CCC;
-    padding: 1.5rem 0; }
-  .skills-table tr:last-child td {
-    border: none; }
-  .skills-table td:nth-child(2) {
-    font-weight: normal;
-    font-style: italic; }
-  .skills-table th {
-    text-align: left; }
-  .skills-table .skillpoints {
-    width: 100%;
-    height: 20px;
-    position: relative;
-    background: #EEE;
-    border: 2px solid #CCC;
-    border-radius: 1rem;
-    overflow: hidden; }
-    .skills-table .skillpoints span {
-      display: block;
-      width: 50%;
-      height: 100%;
-      background: cornflowerblue; }
 
 footer {
   padding: 1rem; }

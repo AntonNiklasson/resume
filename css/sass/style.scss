@@ -1,3 +1,10 @@
+@import "partials/variables";
+@import "partials/header";
+@import "partials/items";
+@import "partials/skillstable";
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,7 +18,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Georgia;
+	font-family: 'Bree Serif', serif;
 	font-weight: normal;
 }
 h1 { font-size: 4rem; }
@@ -31,112 +38,13 @@ a {
 	margin: 1rem auto;
 }
 
-.site-wrap > header {
-	padding: 2rem 0 1rem 0;
-	margin: 0 0 2rem 0;
-	text-align: center;
-	border-bottom: 1px solid gray;
-
-	h1 {
-		font-size: 4.5rem;
-	}
-
-	ul.contacts {
-		margin: 1rem 0;
-		list-style: none;
-		li {
-			margin: 0.2rem 0;
-			font-size: 1.2rem;
-		}
-	}
-	ul.socials {
-		list-style: none;
-		font-size: 2rem;
-		li {
-			display: inline;
-			margin: 0 0.5rem;
-		}
-	}
-}
-
 section {
+	margin: 0 0 2rem 0;
 	padding: 1rem 0;
-	border-bottom: 1px solid gray;
 
 	h2 {
-		border-left: 0.7rem solid tomato;
+		border-left: 0.7rem solid $color;
 		padding: 0.5rem 1rem;
-	}
-}
-
-.item {
-	overflow: hidden;
-	padding: 1rem;
-	border-bottom: 1px solid #CCC;
-	&:last-child {
-		border: none;
-	}
-
-	header {
-		overflow: hidden;
-	}
-	h3 {
-		font-size: 1.5em;
-		strong {
-			font-family: sans-serif;
-			font-weight: bold;
-			font-size: 0.8em;
-			color: #666;
-		}
-	}
-	img {
-		float: right;
-		border: 1px solid #CCC;
-		border-radius: 3px;
-	}
-}
-.education-item {
-	img {
-		max-width: 220px;
-	}
-}
-
-.skills-table {
-	width: 80%;
-	margin: 1rem auto;
-	font-size: 1.3rem;
-	font-weight: bold;
-
-	td {
-		width: 50%;
-		border-bottom: 1px solid #CCC;
-		padding: 1.5rem 0;
-	}
-	tr:last-child td {
-		border: none;
-	}
-	td:nth-child(2) {
-		font-weight: normal;
-		font-style: italic;
-	}
-	th {
-		text-align: left;
-	}
-
-	.skillpoints {
-		width: 100%;
-		height: 20px;
-		position: relative;
-		background: #EEE;
-		border: 2px solid #CCC;
-		border-radius: 1rem;
-		overflow: hidden;
-		span {
-			display: block;
-			width: 50%;
-			height: 100%;
-			background: cornflowerblue;
-		}
 	}
 }
 

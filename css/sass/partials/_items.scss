@@ -1,0 +1,36 @@
+.item {
+	overflow: hidden;
+	padding: 2rem;
+	border-bottom: 1px solid #CCC;
+	&:last-child {
+		border: none;
+	}
+
+	header {
+		overflow: hidden;
+	}
+	h3 {
+		font-size: 1.7em;
+		span {
+			display: block;
+			color: gray;
+			font-size: 0.7em;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+	}
+	img {
+		float: right;
+		border: 1px solid #CCC;
+		border-radius: 3px;
+	}
+	p {
+		font-size: 1rem;
+		margin: 1rem 0 0 0;
+	}
+}
+.education-item {
+	img {
+		width: 200px;
+	}
+}

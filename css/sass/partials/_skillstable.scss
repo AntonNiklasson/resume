@@ -1,0 +1,42 @@
+.skills-table {
+	width: 90%;
+	margin: 1rem auto;
+	font-size: 1.3rem;
+	font-weight: bold;
+	border: 1px solid #BBB;
+	border-collapse: collapse;
+
+	td {
+		width: 50%;
+		border: 1px solid #BBB;
+		padding: 1.5rem;
+	}
+	td:nth-child(2) {
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	ul {
+		list-style: square;
+		color: #444;
+		font-size: 0.7em;
+		margin: 0.2rem 2rem;
+		font-weight: normal;
+	}
+
+	.skillpoints {
+		width: 100%;
+		height: 20px;
+		position: relative;
+		background: #EEE;
+		border: 2px solid #CCC;
+		border-radius: 1rem;
+		overflow: hidden;
+		span {
+			display: block;
+			width: 50%;
+			height: 100%;
+			background: cornflowerblue;
+		}
+	}
+}
