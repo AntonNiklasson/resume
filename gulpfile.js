@@ -15,7 +15,7 @@ gulp.task('livereload', function() {
 });
 
 gulp.task('sass', function() {
-	return gulp.src(['css/sass/style.scss'])
+	return gulp.src(['css/sass/*.scss'])
 		.pipe(plumber())
 		.pipe(sass())
 		.pipe(gulp.dest('./css'))
