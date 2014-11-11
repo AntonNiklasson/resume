@@ -1,23 +1,24 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var plumber = require('gulp-plumber');
-var livereload = require('gulp-livereload');
+var webserver = require('gulp-webserver');
 
-gulp.task('default', ['sass'], function() {
-	livereload.listen();
+gulp.task('default', ['sass', 'webserver'], function() {
 	gulp.watch(['css/sass/**/*.scss'], ['sass']);
-	gulp.watch(['*.html'], ['livereload']);
 });
 
-gulp.task('livereload', function() {
-	return gulp.src(['*.html', 'css/**/*.css'])
-		.pipe(livereload());
+gulp.task('webserver', function() {
+	return gulp.src('.')
+		.pipe(webserver({
+			livereload: true,
+			directoryListing: false,
+			open: true
+		}));
 });
 
 gulp.task('sass', function() {
 	return gulp.src(['css/sass/*.scss'])
 		.pipe(plumber())
 		.pipe(sass())
-		.pipe(gulp.dest('./css'))
-		.pipe(livereload());
+		.pipe(gulp.dest('./css'));
 });

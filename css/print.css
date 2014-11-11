@@ -24,6 +24,9 @@ section {
   .item p:last-child {
     margin-bottom: 0; }
 
+.item.current {
+  font-size: 1.0em; }
+
 .skills-table {
   border-color: gray; }
   .skills-table td {
