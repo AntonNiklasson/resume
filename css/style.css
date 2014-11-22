@@ -9,12 +9,12 @@
     text-transform: uppercase; }
   .site-wrap > header ul.contacts {
     margin: 2rem 0;
-    list-style: none;
-    font-weight: normal;
-    color: #333; }
+    list-style: none; }
     .site-wrap > header ul.contacts li {
       margin: 0.2rem 0;
-      font-size: 1.2rem; }
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #444; }
   .site-wrap > header ul.socials {
     list-style: none;
     font-size: 2rem; }
@@ -22,7 +22,7 @@
       display: inline;
       margin: 0 1rem; }
       .site-wrap > header ul.socials li i {
-        color: #A00043;
+        color: #a00043;
         font-size: 1.2em;
         transition: transform 0.8s ease, color 0.5s ease; }
       .site-wrap > header ul.socials li i:hover {
@@ -34,6 +34,16 @@
         color: #1b5480; }
       .site-wrap > header ul.socials li:nth-child(3) i:hover {
         color: #FF9900; }
+  .site-wrap > header .pdf-button {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    background: #58bb65;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none; }
 
 .item {
   overflow: hidden;
@@ -139,10 +149,8 @@ section {
   margin: 0 0 2rem 0;
   padding: 1rem 0; }
   section h2 {
-    border-left: 0.7rem solid #A00043;
+    border-left: 0.7rem solid #a00043;
     padding: 0.5rem 1rem; }
 
 footer {
   padding: 1rem; }
-
-/*# sourceMappingURL=style.css.map */

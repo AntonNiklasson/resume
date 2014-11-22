@@ -12,11 +12,11 @@
 	ul.contacts {
 		margin: 2rem 0;
 		list-style: none;
-		font-weight: normal;
-		color: #333;
 		li {
 			margin: 0.2rem 0;
-			font-size: 1.2rem;
+			font-size: 0.9rem;
+			font-weight: bold;
+			color: #444;
 		}
 	}
 	ul.socials {
@@ -46,5 +46,17 @@
 				color: #FF9900;
 			}
 		}
+	}
+
+	.pdf-button {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		display: block;
+		background: rgb(88, 187, 101);
+		border-radius: 0.2rem;
+		padding: 0.5rem 1rem;
+		color: white;
+		text-decoration: none;
 	}
 }
