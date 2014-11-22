@@ -1,0 +1,58 @@
+html {
+	font-size: 15px;
+}
+
+.site-wrap > header {
+	padding: 2rem 0;
+	margin: 0;
+
+	ul.contacts {
+		margin: 1rem 0 0 0;
+	}
+
+	ul.socials {
+		display: none;
+	}
+}
+
+section {
+	border-bottom: 1px solid gray;
+	h2 {
+		border: none;
+	}
+}
+
+.item {
+	padding: 1rem;
+
+	img {
+		// display: none;
+		border: 2px solid #CCC;
+		max-width: 150px;
+	}
+
+	p {
+		margin: 0 0 0.5rem 0;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+.item.current {
+	font-size: 1.0em;
+}
+
+.skills-table {
+	border-color: gray;
+	td {
+		padding: 1rem 0.5rem;
+	}
+	td:nth-child(2) {
+		font-weight: bold;
+		font-size: 0.9em;
+	}
+}
+
+.pdf-button {
+	display: none !important;
+}
