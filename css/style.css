@@ -2,8 +2,7 @@
 .site-wrap > header {
   padding: 2rem 0 1rem 0;
   margin: 0 0 2rem 0;
-  text-align: center;
-  border-bottom: 1px solid #AAA; }
+  text-align: center; }
   .site-wrap > header h1 {
     font-size: 4.5rem;
     text-transform: uppercase; }
@@ -63,7 +62,7 @@
       color: gray;
       font-size: 0.7em;
       font-family: sans-serif;
-      font-weight: bold; }
+      font-weight: normal; }
   .item img {
     float: right;
     width: 200px;
@@ -167,8 +166,9 @@ section {
   margin: 0 0 1rem 0;
   padding: 0 0 1rem 0; }
   section h2 {
-    border-left: 0.7rem solid #a00043;
-    padding: 0.5rem 1rem; }
+    border-bottom: 1px solid gray;
+    padding: 0.5rem 1rem;
+    text-align: center; }
 
 footer {
   padding: 1rem; }

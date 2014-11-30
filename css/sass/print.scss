@@ -2,9 +2,21 @@ html {
 	font-size: 15px;
 }
 
+.site-wrap {
+  margin: 0 auto;
+}
+
 .site-wrap > header {
-	padding: 2rem 0;
+	padding: 1rem 0;
 	margin: 0;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2.3rem;
+    }
 
 	ul.contacts {
 		margin: 1rem 0 0 0;
@@ -19,16 +31,20 @@ section {
 	border-bottom: 1px solid gray;
 	h2 {
 		border: none;
+        font-size: 2.0rem;
 	}
 }
 
 .item {
 	padding: 1rem;
+    margin: 0;
+
+    h3 {
+      font-size: 1.4rem;
+    }
 
 	img {
-		// display: none;
-		border: 2px solid #CCC;
-		max-width: 150px;
+		display: none;
 	}
 
 	p {
@@ -41,11 +57,19 @@ section {
 .item.current {
 	font-size: 1.0em;
 }
+.item.education-item {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
 
 .skills-table {
 	border-color: gray;
 	td {
 		padding: 1rem 0.5rem;
+
+        ul {
+          display: none;
+        }
 	}
 	td:nth-child(2) {
 		font-weight: bold;

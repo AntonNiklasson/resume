@@ -43,8 +43,9 @@ section {
 	padding: 0 0 1rem 0;
 
 	h2 {
-		border-left: 0.7rem solid $color;
+		border-bottom: 1px solid gray;
 		padding: 0.5rem 1rem;
+        text-align: center;
 	}
 }
 
