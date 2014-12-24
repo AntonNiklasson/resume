@@ -1,0 +1,128 @@
+{
+  "title": "Curriculum Vitae",
+  "subtitle": "Anton Niklasson",
+
+  "contacts": [
+    "900916-1697",
+    "+4670-4998815",
+    "www.antonniklasson.se",
+    "niklasson.anton[a]gmail.com"
+  ],
+
+  "socials": {
+    "fa-github": "http://www.github.com/AntonNiklasson",
+    "fa-linkedin-square": "http://se.linkedin.com/in/antonniklasson/",
+    "fa-stack-overflow": "http://stackoverflow.com/users/1245042/antonniklasson"
+  },
+
+  "work": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "current": true,
+        "image": "imgs/netlight.png",
+        "title": "Netlight Student Ambassador",
+        "timelabel": "June 2014 -",
+        "description": "My main goal is to help Netlight find the sharpest minds in Linkoping."
+      },
+      {
+        "current": true,
+        "image": "imgs/LinkUniv_logo_en.gif",
+        "title": "PBL Group Supvervisor",
+        "timelabel": "August 2013 -",
+        "description": "I supervise a group of younger students during their PBL meetings."
+      },
+      {
+        "current": true,
+        "image": "",
+        "title": "ANWP, Sole Proprietor",
+        "timelabel": "Autumn 2009 -",
+        "description": "I have developed websites based on WordPress for small to medium sized companies."
+      },
+      {
+        "current": false,
+        "image": "imgs/img_per-per-logo.png",
+        "title": "IT-bolaget Per & Per",
+        "timelabel": "Summer Internship 2014",
+        "description": "I worked mainly with client-rendered maps with WebGL, protobuf and JavaScript."
+      }
+    ]
+  },
+
+  "education": {
+    "title": "Educations",
+    "items": [
+      {
+        "title": "Master of Science in Information Technology",
+        "timespan": "2011 - 2016",
+        "location": "Linköping"
+      },
+      {
+        "title": "Nynäshamns Gymnasium",
+        "timespan": "2006 - 2009",
+        "location": "Nynäshamn"
+      }
+    ]
+  },
+
+  "skills": {
+    "title": "Skills",
+    "items": [
+      {
+        "title": "PHP",
+        "topics": [
+          "Laravel",
+          "Composer"
+        ],
+        "knowledge": "Very good knowledge"
+      },
+      {
+        "title": "JavaScript",
+        "topics": [
+          "Vanilla",
+          "Angular",
+          "jQuery"
+        ],
+        "knowledge": "Very good knowledge"
+      },
+      {
+        "title": "HTML + CSS",
+        "topics": [
+          "Stylus etc.",
+          "Gulp",
+          "Responsive design"
+        ],
+        "knowledge": "Very good knowledge"
+      },
+      {
+        "title": "Java",
+        "topics": [
+          "Android",
+          "Swing"
+        ],
+        "knowledge": "Good knowledge"
+      },
+      {
+        "title": "C#",
+        "knowledge": "Good knowledge"
+      },
+      {
+        "title": "Databases",
+        "topics": [
+          "MySQL",
+          "SQLite",
+          "MongoDB"
+        ],
+        "knowledge": "Good knowledge"
+      },
+      {
+        "title": "Photoshop + Illustrator",
+        "knowledge": "Basic/Good knowledge"
+      },
+      {
+        "title": "C++",
+        "knowledge": "Basic knowledge"
+      }
+    ]
+  }
+}

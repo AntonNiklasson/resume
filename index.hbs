@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CV | Anton Niklasson</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="print" href="css/print.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<div class="site-wrap">
+    <header>
+        <h1>Curriculum Vitae</h1>
+        <h2>Anton Niklasson</h2>
+        <ul class="contacts">
+            {{#each contacts}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <ul class="socials">
+            {{#each socials}}
+                <li><a href="{{this}}"><i class="fa {{@key}}"></i></a></li>
+            {{/each}}
+        </ul>
+    </header>
+
+    <section id="work">
+        {{#with work}}
+            <h2>{{title}}</h2>
+            {{#each items}}
+                <div class="work-item item">
+                    {{#if image}}<img src="{{image}}">{{/if}}
+                    <h3><span>{{timelabel}}</span> {{title}}</h3>
+                    <p>{{description}}</p>
+                </div>
+            {{/each}}
+        {{/with}}
+    </section>
+
+    <section id="education">
+        {{#with education}}
+            <h2>{{title}}</h2>
+            {{#each items}}
+                <div class="education-item item">
+                    <header>
+                        <ul class="meta">
+                            <li>{{timespan}}</li>
+                            <li><i class="fa fa-globe"></i> {{location}}</li>
+                        </ul>
+                        <h3>{{title}}</h3>
+                    </header>
+                </div>
+            {{/each}}
+        {{/with}}
+    </section>
+
+    <section id="skills">
+        <h2>{{skills.title}}</h2>
+        <table class="skills-table">
+        {{#each skills.items}}
+            <tr>
+                <td>{{title}}
+                    {{#if topics}}
+                        <ul>
+                        {{#each topics}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                        </ul>
+                    {{/if}}
+                </td>
+                <td>{{knowledge}}</td>
+            </tr>
+        {{/each}}
+        </table>
+    </section>
+</div>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-13287140-15', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>
