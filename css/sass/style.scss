@@ -1,8 +1,10 @@
-@import "partials/variables";
+$color: #777;
+
+
 @import "partials/header";
 @import "partials/items";
 @import "partials/skillstable";
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 
 
 * {
@@ -18,11 +20,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Bree Serif', serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
 }
 h1 { font-size: 4rem; }
-h2 { font-size: 3rem; }
+h2 { font-size: 2.8rem; }
 h3 { font-size: 2.5rem; }
 h4 { font-size: 2rem; }
 h5 { font-size: 1.5rem; }
@@ -42,10 +44,12 @@ section {
 	margin: 0 0 1rem 0;
 	padding: 0 0 1rem 0;
 
-	h2 {
+	.section-title {
 		border-bottom: 1px solid gray;
 		padding: 0.5rem 1rem;
         text-align: center;
+	  	font-size: 1.9rem;
+		text-transform: uppercase;
 	}
 }
 

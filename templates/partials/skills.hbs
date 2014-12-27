@@ -1,0 +1,19 @@
+<section id="skills">
+    <h2 class="section-title">{{skills.title}}</h2>
+    <table class="skills-table">
+		{{#each skills.items}}
+            <tr>
+                <td>{{title}}
+					{{#if topics}}
+                        <ul>
+							{{#each topics}}
+                                <li>{{this}}</li>
+							{{/each}}
+                        </ul>
+					{{/if}}
+                </td>
+                <td>{{knowledge}}</td>
+            </tr>
+		{{/each}}
+    </table>
+</section>

@@ -18,26 +18,20 @@
 	}
 
 	ul {
-		list-style: square;
-		color: #444;
-		font-size: 1.0rem;
-		margin: 0.2rem 2rem;
+		list-style: none;
+		color: #666;
+		font-size: 0.9rem;
+		margin: 0.5rem 0 0 0.5rem;
 		font-weight: normal;
 	}
 
-	.skillpoints {
-		width: 100%;
-		height: 20px;
-		position: relative;
-		background: #EEE;
-		border: 2px solid #CCC;
-		border-radius: 1rem;
-		overflow: hidden;
-		span {
-			display: block;
-			width: 50%;
-			height: 100%;
-			background: cornflowerblue;
-		}
+  	li {
+	  display: inline;
+	}
+  	li:after {
+	  content: ", ";
+	}
+  	li:last-child:after {
+	  content: ".";
 	}
 }
