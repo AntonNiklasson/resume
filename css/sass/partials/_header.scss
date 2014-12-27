@@ -4,18 +4,18 @@
 	text-align: center;
 
 	h1 {
-		font-size: 4.5rem;
 		text-transform: uppercase;
 	}
 
 	ul.contacts {
 		margin: 2rem 0;
 		list-style: none;
+		font-size: 0.8rem;
+  		font-weight: bold;
+		text-transform: uppercase;
+		color: #444;
 		li {
 			margin: 0.2rem 0;
-			font-size: 0.9rem;
-			font-weight: bold;
-			color: #444;
 		}
 	}
 	ul.socials {
@@ -24,26 +24,24 @@
 		li {
 			display: inline;
 			margin: 0 1rem;
-
-			i {
-				color: $color;
-				font-size: 1.2em;
-
-				transition: transform 0.8s ease, color 0.5s ease;
-			}
-			i:hover {
-				transform: rotate(20deg);
-				color: #222;
-			}
-			&:nth-child(1) i:hover {
-				color: #111;
-			}
-			&:nth-child(2) i:hover {
-				color: #1b5480;
-			}
-			&:nth-child(3) i:hover {
-				color: #FF9900;
-			}
+		}
+		i {
+			color: $color;
+			font-size: 1.2em;
+			transition: transform 0.8s ease, color 0.5s ease;
+		}
+		i:hover {
+			transform: rotate(10deg) scale(1.1);
+			color: #222;
+		}
+		i.fa-github:hover {
+			color: #111;
+		}
+		i.fa-linkedin-square:hover {
+			color: #1b5480;
+		}
+		i.fa-stack-overflow:hover {
+			color: #FF9900;
 		}
 	}
 

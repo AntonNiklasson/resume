@@ -1,38 +1,38 @@
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 .site-wrap > header {
   padding: 2rem 0 1rem 0;
   margin: 0 0 2rem 0;
   text-align: center; }
   .site-wrap > header h1 {
-    font-size: 4.5rem;
     text-transform: uppercase; }
   .site-wrap > header ul.contacts {
     margin: 2rem 0;
-    list-style: none; }
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444; }
     .site-wrap > header ul.contacts li {
-      margin: 0.2rem 0;
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: #444; }
+      margin: 0.2rem 0; }
   .site-wrap > header ul.socials {
     list-style: none;
     font-size: 2rem; }
     .site-wrap > header ul.socials li {
       display: inline;
       margin: 0 1rem; }
-      .site-wrap > header ul.socials li i {
-        color: #a00043;
-        font-size: 1.2em;
-        transition: transform 0.8s ease, color 0.5s ease; }
-      .site-wrap > header ul.socials li i:hover {
-        transform: rotate(20deg);
-        color: #222; }
-      .site-wrap > header ul.socials li:nth-child(1) i:hover {
-        color: #111; }
-      .site-wrap > header ul.socials li:nth-child(2) i:hover {
-        color: #1b5480; }
-      .site-wrap > header ul.socials li:nth-child(3) i:hover {
-        color: #FF9900; }
+    .site-wrap > header ul.socials i {
+      color: #777777;
+      font-size: 1.2em;
+      transition: transform 0.8s ease, color 0.5s ease; }
+    .site-wrap > header ul.socials i:hover {
+      transform: rotate(10deg) scale(1.1);
+      color: #222; }
+    .site-wrap > header ul.socials i.fa-github:hover {
+      color: #111; }
+    .site-wrap > header ul.socials i.fa-linkedin-square:hover {
+      color: #1b5480; }
+    .site-wrap > header ul.socials i.fa-stack-overflow:hover {
+      color: #FF9900; }
   .site-wrap > header .pdf-button {
     position: absolute;
     top: 5px;
@@ -104,24 +104,17 @@
     font-style: italic;
     vertical-align: top; }
   .skills-table ul {
-    list-style: square;
-    color: #444;
-    font-size: 1.0rem;
-    margin: 0.2rem 2rem;
+    list-style: none;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0 0.5rem;
     font-weight: normal; }
-  .skills-table .skillpoints {
-    width: 100%;
-    height: 20px;
-    position: relative;
-    background: #EEE;
-    border: 2px solid #CCC;
-    border-radius: 1rem;
-    overflow: hidden; }
-    .skills-table .skillpoints span {
-      display: block;
-      width: 50%;
-      height: 100%;
-      background: cornflowerblue; }
+  .skills-table li {
+    display: inline; }
+  .skills-table li:after {
+    content: ", "; }
+  .skills-table li:last-child:after {
+    content: "."; }
 
 * {
   margin: 0;
@@ -133,14 +126,14 @@ body {
   color: #333; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal; }
 
 h1 {
   font-size: 4rem; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 2.8rem; }
 
 h3 {
   font-size: 2.5rem; }
@@ -165,10 +158,12 @@ a {
 section {
   margin: 0 0 1rem 0;
   padding: 0 0 1rem 0; }
-  section h2 {
+  section .section-title {
     border-bottom: 1px solid gray;
     padding: 0.5rem 1rem;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: uppercase; }
 
 footer {
   padding: 1rem; }

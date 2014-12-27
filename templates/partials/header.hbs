@@ -1,0 +1,15 @@
+<header>
+    <h1>Curriculum Vitae</h1>
+    <h2>Anton Niklasson</h2>
+    <ul class="contacts">
+		{{#each contacts}}
+            <li>{{this}}</li>
+		{{/each}}
+    </ul>
+
+    <ul class="socials">
+		{{#each socials}}
+            <li><a href="{{this}}"><i class="fa {{@key}}"></i></a></li>
+		{{/each}}
+    </ul>
+</header>

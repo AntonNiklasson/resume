@@ -1,0 +1,23 @@
+<section id="education">
+    <h2 class="section-title">{{education.title}}</h2>
+	{{#each education.items}}
+        <div class="education-item item">
+            <header>
+                <h3>{{title}}</h3>
+                <ul class="meta">
+                    <li>{{timespan}}</li>
+                    <li><i class="fa fa-globe"></i> {{location}}</li>
+                </ul>
+            </header>
+
+			{{#if topics}}
+                <p>Including topics such as:</p>
+                <ul>
+					{{#each topics}}
+                        <li>{{this}}</li>
+					{{/each}}
+                </ul>
+			{{/if}}
+        </div>
+	{{/each}}
+</section>
