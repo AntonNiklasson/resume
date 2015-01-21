@@ -3,25 +3,28 @@
 	margin: 1rem auto;
 	font-size: 1.1rem;
 	font-weight: bold;
-	border: 1px solid #BBB;
+	border: none;
 	border-collapse: collapse;
+
+	tr {
+		border-bottom: 1px solid #BBB;
+	}
 
 	td {
 		width: 50%;
-		border: 1px solid #BBB;
-		padding: 1rem;
+		padding: .5rem;
 	}
 	td:nth-child(2) {
 		font-weight: normal;
 		font-style: italic;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 
 	ul {
 		list-style: none;
 		color: #666;
 		font-size: 0.9rem;
-		margin: 0.5rem 0 0 0.5rem;
+		margin-top: .5rem;
 		font-weight: normal;
 	}
 
