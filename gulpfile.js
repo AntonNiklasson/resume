@@ -9,7 +9,7 @@ var rename = require('gulp-rename');
 
 gulp.task('default', ['template', 'sass', 'webserver'], function() {
 	gulp.watch(['./css/sass/**/*.scss'], ['sass']);
-	gulp.watch(['./templates/**/*.hbs', './data.json'], ['template']);
+	gulp.watch(['./templates/**/*'], ['template']);
 });
 
 gulp.task('webserver', function() {
@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('template', function() {
-	var data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
+	var data = JSON.parse(fs.readFileSync('./templates/data.json', 'utf8'));
 	var options = {
 		batch: ['./templates/partials']
 	};
