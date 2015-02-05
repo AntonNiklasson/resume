@@ -96,6 +96,8 @@
   border-collapse: collapse; }
   .skills-table tr {
     border-bottom: 1px solid #BBB; }
+  .skills-table tr:last-child {
+    border-bottom: none; }
   .skills-table td {
     width: 50%;
     padding: .5rem; }

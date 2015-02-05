@@ -9,6 +9,9 @@
 	tr {
 		border-bottom: 1px solid #BBB;
 	}
+	tr:last-child {
+		border-bottom: none;
+	}
 
 	td {
 		width: 50%;
