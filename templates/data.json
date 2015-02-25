@@ -12,9 +12,17 @@
     "fa-linkedin-square": "http://se.linkedin.com/in/antonniklasson/",
     "fa-stack-overflow": "http://stackoverflow.com/users/1245042/antonniklasson"
   },
+  "summary": "",
   "work": {
-    "title": "Work Experience",
+    "title": "Experience",
     "items": [
+	  {
+		"current": true,
+		"image": "imgs/netlight.png",
+		"title": "Next9 Adept",
+		"timelabel": "January 2015 -",
+		"description": "Next9 is a mentorship program aimed for young professionals with high ambitions. Each year 9 students from all over the country are elected to be mentored and coached for 6 months."
+	  },
       {
         "current": true,
         "image": "imgs/netlight.png",
@@ -114,7 +122,7 @@
         "knowledge": "Very good knowledge"
       },
       {
-        "title": "HTML + CSS",
+        "title": "HTML+CSS",
         "topics": [
           "Stylus etc",
           "Gulp",

@@ -5,4 +5,5 @@
 	git reset --hard HEAD
 	git pull origin master
 	bower install --allow-root
+	gulp template
 @endtask
