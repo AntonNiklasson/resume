@@ -1,17 +1,10 @@
 .item {
-	overflow: hidden;
-	width: 90%;
-	margin: 1rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	padding: 1rem;
 	border-bottom: 1px solid #CCC;
-	font-size: 1em;
-	&:last-child {
-		border: none;
-	}
 
-	header {
-		overflow: hidden;
-	}
 	h3 {
 		font-size: 1.7em;
 		span {
@@ -23,7 +16,6 @@
 		}
 	}
 	img {
-		float: right;
 		width: 150px;
 		border: 1px solid #CCC;
 		border-radius: 3px;
@@ -31,6 +23,7 @@
 	p {
 		font-size: 1em;
 		margin: 1em 0 0 0;
+		text-align: justify;
 	}
 	ul {
 		margin: 1rem 2rem;

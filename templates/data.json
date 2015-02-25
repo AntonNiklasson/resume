@@ -2,8 +2,7 @@
   "title": "Curriculum Vitae",
   "subtitle": "Anton Niklasson",
   "contacts": [
-    "900916-1697",
-    "+4670-4998815",
+    "+4670 499 88 15",
     "www.antonniklasson.se",
     "niklasson.anton[a]gmail.com"
   ],
@@ -24,20 +23,20 @@
 		"current": true,
 		"image": "imgs/netlight.png",
 		"title": "Next9 Adept",
-		"timelabel": "January 2015 -",
+		"timelabel": "January 2015 - June 2015",
 		"description": "Next9 is a mentorship program aimed for young professionals with high ambitions. Each year 9 students from all over the country are elected to be mentored and coached for 6 months."
 	  },
       {
         "current": true,
         "image": "imgs/netlight.png",
         "title": "Netlight Student Ambassador",
-        "timelabel": "June 2014 -",
+        "timelabel": "June 2014 - Ongoing",
         "description": "My main goal is to help Netlight find the sharpest minds in Linkoping."
       },
       {
         "current": true,
         "title": "ANWP, Sole Proprietor",
-        "timelabel": "Autumn 2009 -",
+        "timelabel": "November 2009 - Ongoing",
         "description": "I have developed websites based on WordPress for small to medium sized companies."
       },
       {
@@ -58,7 +57,7 @@
         "current": false,
         "image": "imgs/LinkUniv_logo_en.gif",
         "title": "Lab Assistant",
-        "timelabel": "Spring 2013",
+        "timelabel": "January 2013 - April 2013",
         "description": "An introductory course in web programming with python and Flask as a back-end."
       },
       {
@@ -99,9 +98,10 @@
         ]
       },
       {
-        "title": "Nynäshamns Gymnasium",
+        "title": "Nynäshamns Gymnasium - ",
         "timespan": "2006 - 2009",
-        "location": "Nynäshamn"
+        "location": "Nynäshamn",
+        "description": ""
       }
     ]
   },

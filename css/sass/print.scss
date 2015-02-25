@@ -39,7 +39,7 @@ section {
 	}
 
 	&#education {
-		page-break-before: always;
+//		page-break-before: always;
 	}
 }
 
@@ -74,10 +74,6 @@ section {
 	border-color: gray;
 	td {
 		padding: 1rem 0.5rem;
-
-        ul {
-          display: none;
-        }
 	}
 	td:nth-child(2) {
 		font-weight: bold;

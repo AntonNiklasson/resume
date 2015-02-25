@@ -1,10 +1,15 @@
 <section id="work">
     <h2 class="section-title">{{work.title}}</h2>
+
 	{{#each work.items}}
         <div class="work-item item">
-			{{#if image}}<img src="{{image}}">{{/if}}
-            <h3><span>{{timelabel}}</span> {{title}}</h3>
-            <p>{{description}}</p>
+			<h3><span>{{timelabel}}</span> {{title}}</h3>
+			<p>{{description}}</p>
+
+			{{#if image}}
+				<img src="{{image}}">
+			{{/if}}
         </div>
 	{{/each}}
+
 </section>

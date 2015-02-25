@@ -23,8 +23,6 @@ section {
   section h2 {
     border: none;
     font-size: 2.0rem; }
-  section#education {
-    page-break-before: always; }
 
 .item {
   padding: 1rem;
@@ -49,8 +47,6 @@ section {
   border-color: gray; }
   .skills-table td {
     padding: 1rem 0.5rem; }
-    .skills-table td ul {
-      display: none; }
   .skills-table td:nth-child(2) {
     font-weight: bold;
     font-size: 0.9em; }
