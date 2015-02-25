@@ -13,6 +13,10 @@
     "fa-stack-overflow": "http://stackoverflow.com/users/1245042/antonniklasson"
   },
   "summary": "",
+  "goals": {
+    "title": "Goals",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non ante ut neque pulvinar luctus. Fusce leo ex, porttitor vitae auctor et, blandit condimentum ipsum. Vivamus id urna sit amet mauris vehicula consectetur eu non turpis. Quisque finibus odio sit amet velit lacinia volutpat."
+  },
   "work": {
     "title": "Experience",
     "items": [
