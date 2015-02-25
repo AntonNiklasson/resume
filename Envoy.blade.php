@@ -4,4 +4,5 @@
 	cd /var/www/cv.antonniklasson.se
 	git reset --hard HEAD
 	git pull origin master
+	bower install --allow-root
 @endtask

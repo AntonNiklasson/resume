@@ -21,7 +21,7 @@
       display: inline;
       margin: 0 1rem; }
     .site-wrap > header ul.socials i {
-      color: #777777;
+      color: #777;
       font-size: 1.2em;
       transition: transform 0.8s ease, color 0.5s ease; }
     .site-wrap > header ul.socials i:hover {
@@ -167,3 +167,5 @@ section {
 
 footer {
   padding: 1rem; }
+
+/*# sourceMappingURL=style.css.map */
