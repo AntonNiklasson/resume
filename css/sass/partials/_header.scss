@@ -1,31 +1,39 @@
 .site-wrap > header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 1.5rem;
+	padding: 1rem 0;
 
 	h1 {
 		text-transform: uppercase;
+		font-size: 3.3rem;
+		font-weight: normal;
+	}
+	h1:first-word {
+		font-weight: bold;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	img.portrait {
+		max-width: 200px;
+		float: right;
 	}
 
 	.details {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
-		width: 70%;
-		margin: 1rem auto;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		margin: .5rem auto;
+		font-size: 1rem;
 	}
 
 	ul.contacts {
-		margin: .5rem 0;
+		margin: .5rem 2rem .5rem 0;
 		list-style: none;
 		font-size: 0.8rem;
   		font-weight: bold;
-		text-transform: uppercase;
 		color: #444;
-		li {
-			margin: 0.2rem 0;
-		}
 	}
 	ul.socials {
 		display: flex;
@@ -51,17 +59,5 @@
 		i.fa-stack-overflow:hover {
 			color: #FF9900;
 		}
-	}
-
-	.pdf-button {
-		position: absolute;
-		top: 5px;
-		left: 5px;
-		display: block;
-		background: rgb(88, 187, 101);
-		border-radius: 0.2rem;
-		padding: 0.5rem 1rem;
-		color: white;
-		text-decoration: none;
 	}
 }

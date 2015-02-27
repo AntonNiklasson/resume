@@ -1,26 +1,31 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 .site-wrap > header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem; }
+  padding: 1rem 0; }
   .site-wrap > header h1 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 3.3rem;
+    font-weight: normal; }
+  .site-wrap > header h1:first-word {
+    font-weight: bold; }
+  .site-wrap > header h2 {
+    font-size: 2.5rem; }
+  .site-wrap > header img.portrait {
+    max-width: 200px;
+    float: right; }
   .site-wrap > header .details {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
-    margin: 1rem auto; }
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: .5rem auto;
+    font-size: 1rem; }
   .site-wrap > header ul.contacts {
-    margin: .5rem 0;
+    margin: .5rem 2rem .5rem 0;
     list-style: none;
     font-size: 0.8rem;
     font-weight: bold;
-    text-transform: uppercase;
     color: #444; }
-    .site-wrap > header ul.contacts li {
-      margin: 0.2rem 0; }
   .site-wrap > header ul.socials {
     display: flex;
     list-style: none;
@@ -39,23 +44,15 @@
       color: #1b5480; }
     .site-wrap > header ul.socials i.fa-stack-overflow:hover {
       color: #FF9900; }
-  .site-wrap > header .pdf-button {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    display: block;
-    background: #58bb65;
-    border-radius: 0.2rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    text-decoration: none; }
 
 .item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem;
-  border-bottom: 1px solid #CCC; }
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #DDD; }
+  .item:last-child {
+    border-bottom: none; }
   .item h3 {
     font-size: 1.7em; }
     .item h3 span {
@@ -76,13 +73,10 @@
     margin: 1rem 2rem;
     font-size: 0.9em; }
 
-.item.current {
-  font-size: 1.2em; }
-
 .education-item header .meta {
   list-style: none;
+  font-size: 1.1rem;
   color: gray;
-  font-size: 1em;
   font-weight: bold;
   margin: 0; }
   .education-item header .meta li {

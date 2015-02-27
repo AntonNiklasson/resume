@@ -1,9 +1,9 @@
 {
-  "title": "Curriculum Vitae",
-  "subtitle": "Anton Niklasson",
+  "title": "Anton Niklasson",
+  "portrait": "/imgs/portrait.jpg",
   "contacts": [
-    "+4670 499 88 15",
-    "www.antonniklasson.se",
+    "070 499 88 15",
+    "antonniklasson.se",
     "niklasson.anton[a]gmail.com"
   ],
   "socials": {
@@ -11,64 +11,55 @@
     "fa-linkedin-square": "http://se.linkedin.com/in/antonniklasson/",
     "fa-stack-overflow": "http://stackoverflow.com/users/1245042/antonniklasson"
   },
-  "summary": "",
   "goals": {
     "title": "Goals",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non ante ut neque pulvinar luctus. Fusce leo ex, porttitor vitae auctor et, blandit condimentum ipsum. Vivamus id urna sit amet mauris vehicula consectetur eu non turpis. Quisque finibus odio sit amet velit lacinia volutpat."
+    "body": "I would like to work in an innovative, high-paced environment where new ideas and creative thinking is welcome."
   },
   "work": {
     "title": "Experience",
     "items": [
 	  {
-		"current": true,
 		"image": "imgs/netlight.png",
 		"title": "Next9 Adept",
 		"timelabel": "January 2015 - June 2015",
-		"description": "Next9 is a mentorship program aimed for young professionals with high ambitions. Each year 9 students from all over the country are elected to be mentored and coached for 6 months."
+		"description": "Next9 is a mentorship program aimed for young professionals with high ambitions. Each year 9 students from all over the country are elected to be mentored for 6 months."
 	  },
       {
-        "current": true,
         "image": "imgs/netlight.png",
         "title": "Netlight Student Ambassador",
         "timelabel": "June 2014 - Ongoing",
         "description": "My main goal is to help Netlight find the sharpest minds in Linkoping."
       },
       {
-        "current": true,
         "title": "ANWP, Sole Proprietor",
         "timelabel": "November 2009 - Ongoing",
         "description": "I have developed websites based on WordPress for small to medium sized companies."
       },
       {
-        "current": false,
         "image": "imgs/LinkUniv_logo_en.gif",
         "title": "PBL Group Supervisor",
         "timelabel": "August 2013 - December 2014",
         "description": "I supervise a group of younger students during their PBL meetings."
       },
       {
-        "current": false,
         "image": "imgs/img_per-per-logo.png",
         "title": "IT-bolaget Per & Per",
         "timelabel": "Summer Internship 2014",
         "description": "I worked mainly with client-rendered maps with WebGL, protobuf and JavaScript."
       },
       {
-        "current": false,
         "image": "imgs/LinkUniv_logo_en.gif",
         "title": "Lab Assistant",
         "timelabel": "January 2013 - April 2013",
         "description": "An introductory course in web programming with python and Flask as a back-end."
       },
       {
-        "current": false,
         "image": "imgs/dsektionen-logo.png",
         "title": "Head of Corporate Relations",
         "timelabel": "June 2013 - June 2014",
         "description": "I worked with a group to create possibilities for companies and students to meet."
       },
       {
-        "current": false,
         "image": "imgs/nynas.jpg",
         "title": "Nynas AB",
         "timelabel": "Summer Internship 2012",
@@ -83,25 +74,13 @@
         "title": "Master of Science in Information Technology",
         "timespan": "2011 - 2016",
         "location": "Linköping",
-        "topics": [
-          "Design patterns",
-          "C++",
-          "Automatic control systems",
-          "Networking",
-          "Electromagnetism",
-          "Calculus",
-          "Data structures and algorithms",
-          "Mathematical optimizations",
-          "Game development",
-          "Android",
-          "IT Security"
-        ]
+        "body": "Lorem Ipsum Dolor Sit Amet."
       },
       {
         "title": "Nynäshamns Gymnasium - ",
         "timespan": "2006 - 2009",
         "location": "Nynäshamn",
-        "description": ""
+        "body": "Natural Science Program."
       }
     ]
   },
