@@ -5,19 +5,24 @@
 	padding: 1rem 2rem;
 	border-bottom: 1px solid #DDD;
 
+	header {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+	}
+
 	&:last-child {
 		border-bottom: none;
 	}
 
 	h3 {
-		font-size: 1.7em;
-		span {
-			display: block;
-			color: gray;
-			font-size: 0.7em;
-			font-family: sans-serif;
-			font-weight: normal;
-		}
+		font-size: 1.6em;
+	}
+	h4 {
+		font-size: 1rem;
+		color: #888;
 	}
 	img {
 		width: 150px;
@@ -38,11 +43,11 @@
 .education-item {
 	header .meta {
 		list-style: none;
-		font-size: 1.1rem;
-		color: gray;
-		font-weight: bold;
+		font-size: 1rem;
+		color: #888;
 		margin: 0;
 		li {
+			@extend .sansserif;
 			display: inline;
 			margin-right: 1.5rem;
 		}

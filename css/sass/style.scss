@@ -1,11 +1,8 @@
-$color: #555;
-
-
 @import "partials/header";
 @import "partials/items";
 @import "partials/skillstable";
 @import "partials/goals";
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Average|Fjalla+One);
 
 
 * {
@@ -16,13 +13,22 @@ $color: #555;
 
 
 body {
-	font: 13px sans-serif;
+	@extend .serif;
+	font-size: 14px;
 	color: #333;
 }
 
+.sansserif {
+	font-family: 'Fjalla One', sans-serif;
+}
+.serif {
+	font-family: 'Average', serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	@extend .sansserif;
 	font-weight: normal;
+
 }
 h1 { font-size: 4rem; }
 h2 { font-size: 2.8rem; }
@@ -55,6 +61,6 @@ section {
 	.section-title {
       border-bottom: 1px solid #BBB;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: 2.1rem;
 	}
 }

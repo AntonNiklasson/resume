@@ -1,21 +1,27 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Average|Fjalla+One);
 .site-wrap > header {
-  padding: 1rem 0; }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0; }
+  .site-wrap > header .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .site-wrap > header h1 {
     text-transform: uppercase;
     font-size: 3.3rem;
     font-weight: normal; }
   .site-wrap > header h1:first-word {
     font-weight: bold; }
-  .site-wrap > header h2 {
-    font-size: 2.5rem; }
   .site-wrap > header img.portrait {
     max-width: 200px;
-    float: right; }
+    max-height: 200px; }
   .site-wrap > header .details {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: .5rem auto;
@@ -23,8 +29,8 @@
   .site-wrap > header ul.contacts {
     margin: .5rem 2rem .5rem 0;
     list-style: none;
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 0.9rem;
+    font-weight: normal;
     color: #444; }
   .site-wrap > header ul.socials {
     display: flex;
@@ -51,16 +57,19 @@
   align-items: flex-start;
   padding: 1rem 2rem;
   border-bottom: 1px solid #DDD; }
+  .item header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%; }
   .item:last-child {
     border-bottom: none; }
   .item h3 {
-    font-size: 1.7em; }
-    .item h3 span {
-      display: block;
-      color: gray;
-      font-size: 0.7em;
-      font-family: sans-serif;
-      font-weight: normal; }
+    font-size: 1.6em; }
+  .item h4 {
+    font-size: 1rem;
+    color: #888; }
   .item img {
     width: 150px;
     border: 1px solid #CCC;
@@ -75,9 +84,8 @@
 
 .education-item header .meta {
   list-style: none;
-  font-size: 1.1rem;
-  color: gray;
-  font-weight: bold;
+  font-size: 1rem;
+  color: #888;
   margin: 0; }
   .education-item header .meta li {
     display: inline;
@@ -126,11 +134,16 @@
   box-sizing: border-box; }
 
 body {
-  font: 13px sans-serif;
+  font-size: 14px;
   color: #333; }
 
+.sansserif, .education-item header .meta li, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif; }
+
+.serif, body {
+  font-family: 'Average', serif; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
   font-weight: normal; }
 
 h1 {
@@ -170,6 +183,6 @@ section {
   section .section-title {
     border-bottom: 1px solid #BBB;
     text-transform: uppercase;
-    font-size: 2rem; }
+    font-size: 2.1rem; }
 
 /*# sourceMappingURL=style.css.map */

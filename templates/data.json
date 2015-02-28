@@ -9,7 +9,8 @@
   "socials": {
     "fa-github": "http://www.github.com/AntonNiklasson",
     "fa-linkedin-square": "http://se.linkedin.com/in/antonniklasson/",
-    "fa-stack-overflow": "http://stackoverflow.com/users/1245042/antonniklasson"
+    "fa-stack-overflow": "http://stackoverflow.com/users/1245042/antonniklasson",
+    "fa-twitter": "http://twitter.com/AntonNiklasson"
   },
   "goals": {
     "title": "Goals",
@@ -21,18 +22,18 @@
 	  {
 		"image": "imgs/netlight.png",
 		"title": "Next9 Adept",
-		"timelabel": "January 2015 - June 2015",
+		"timelabel": "January 2015 - Present",
 		"description": "Next9 is a mentorship program aimed for young professionals with high ambitions. Each year 9 students from all over the country are elected to be mentored for 6 months."
 	  },
       {
         "image": "imgs/netlight.png",
         "title": "Netlight Student Ambassador",
-        "timelabel": "June 2014 - Ongoing",
+        "timelabel": "June 2014 - Present",
         "description": "My main goal is to help Netlight find the sharpest minds in Linkoping."
       },
       {
         "title": "ANWP, Sole Proprietor",
-        "timelabel": "November 2009 - Ongoing",
+        "timelabel": "November 2009 - Present",
         "description": "I have developed websites based on WordPress for small to medium sized companies."
       },
       {
