@@ -1,17 +1,6 @@
 .item {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 1rem 2rem;
+	padding: 1rem;
 	border-bottom: 1px solid #DDD;
-
-	header {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: space-between;
-		width: 100%;
-	}
 
 	&:last-child {
 		border-bottom: none;
@@ -26,12 +15,12 @@
 	}
 	img {
 		width: 150px;
+		min-width: 150px;
+		max-height: 90px;
 		border: 1px solid #CCC;
-		border-radius: 3px;
 	}
 	p {
 		font-size: 1em;
-		margin: 1em 0 0 0;
 		text-align: justify;
 	}
 	ul {
@@ -41,15 +30,36 @@
 }
 
 .education-item {
-	header .meta {
-		list-style: none;
-		font-size: 1rem;
-		color: #888;
-		margin: 0;
-		li {
-			@extend .sansserif;
-			display: inline;
-			margin-right: 1.5rem;
+	display: flex;
+	flex-direction: column;
+
+	header {
+		margin-bottom: .5rem;
+
+		.meta {
+			list-style: none;
+			font-size: 1rem;
+			color: #888;
+			margin: 0;
+			li {
+				@extend .sansserif;
+				display: inline;
+				margin-right: 1.5rem;
+			}
 		}
+	}
+}
+
+.work-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	hgroup {
+		margin-bottom: .5rem;
+	}
+
+	.content {
+		margin-right: 1rem;
 	}
 }

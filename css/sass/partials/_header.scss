@@ -3,7 +3,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 2rem 0;
+	padding: 1rem 0;
 
 	.header-content {
 		display: flex;
@@ -23,6 +23,7 @@
 	img.portrait {
 		max-width: 200px;
 		max-height: 200px;
+		border: 3px solid gray;
 	}
 
 	.details {
@@ -38,14 +39,14 @@
 	ul.contacts {
 		margin: .5rem 2rem .5rem 0;
 		list-style: none;
-		font-size: 0.9rem;
+		font-size: 1.1rem;
   		font-weight: normal;
 		color: #444;
 	}
 	ul.socials {
 		display: flex;
 		list-style: none;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		li {
 			margin: 1rem;
 		}

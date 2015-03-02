@@ -3,15 +3,14 @@
 
 	{{#each work.items}}
         <div class="work-item item">
-			<header>
-				<hgroup>
-                    <h3>{{title}}</h3>
+			<div class="content">
+                <hgroup>
+					<h3>{{title}}</h3>
                     <h4>{{timelabel}}</h4>
 				</hgroup>
-                {{#if image}}<img src="{{image}}">{{/if}}
-            </header>
-
-			<p>{{description}}</p>
+                <p>{{description}}</p>
+			</div>
+			{{#if image}}<img src="{{image}}">{{/if}}
         </div>
 	{{/each}}
 
