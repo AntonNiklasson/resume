@@ -13,17 +13,21 @@
 		border-bottom: none;
 	}
 
-	td {
-		width: 50%;
+	td:nth-child(1) {
+		@extend .sansserif;
+		width: 75%;
 		padding: .5rem;
 	}
 	td:nth-child(2) {
+		@extend .sansserif;
+		font-size: 1.1rem;
+		font-style: normal;
 		font-weight: normal;
-		font-style: italic;
-		vertical-align: middle;
+		text-align: right;
 	}
 
 	ul {
+		@extend .serif;
 		list-style: none;
 		color: #666;
 		font-size: 0.9rem;

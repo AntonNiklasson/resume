@@ -1,15 +1,17 @@
 <header>
-    <h1>Anton Niklasson</h1>
-    <h2>Curriculum Vitae</h2>
-    <ul class="contacts">
-		{{#each contacts}}
-            <li>{{this}}</li>
-		{{/each}}
-    </ul>
-
-    <ul class="socials">
-		{{#each socials}}
-            <li><a href="{{this}}"><i class="fa {{@key}}"></i></a></li>
-		{{/each}}
-    </ul>
+	<div class="header-content">
+		<h1>{{title}}</h1>
+		<div class="details">
+			<ul class="contacts">
+				{{#each contacts}}
+					<li>{{this}}</li>
+				{{/each}}
+			</ul>
+			<ul class="socials">
+				{{#each socials}}
+					<li><a href="{{this}}" target="_blank"><i class="fa {{@key}}"></i></a></li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
 </header>

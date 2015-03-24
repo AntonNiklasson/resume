@@ -1,58 +1,69 @@
 .site-wrap > header {
-	padding: 2rem 0 1rem 0;
-	margin: 0 0 1rem 0;
-	text-align: center;
+	padding: 1rem 0;
+
+	.header-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 
 	h1 {
 		text-transform: uppercase;
+		font-size: 4rem;
+		font-weight: normal;
+		text-align: center;
+	}
+	h1:first-word {
+		font-weight: bold;
+	}
+
+	img.portrait {
+		max-width: 200px;
+		max-height: 200px;
+		border: 3px solid gray;
+	}
+
+	.details {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 75%;
+		margin: .5rem auto;
+		padding: 0;
+		font-size: 1rem;
 	}
 
 	ul.contacts {
-		margin: 2rem 0;
+		margin: 1rem 0;
 		list-style: none;
-		font-size: 0.8rem;
-  		font-weight: bold;
-		text-transform: uppercase;
+		font-size: 1.1rem;
+  		font-weight: normal;
 		color: #444;
-		li {
-			margin: 0.2rem 0;
-		}
+		text-align: center;
 	}
 	ul.socials {
+		display: flex;
 		list-style: none;
-		font-size: 2rem;
 		li {
-			display: inline;
-			margin: 0 1rem;
+			margin: 1rem;
 		}
 		i {
-			color: $color;
-			font-size: 1.2em;
+			font-size: 1.5rem;
+			color: gray;
 			transition: transform 0.8s ease, color 0.5s ease;
-		}
-		i:hover {
-			color: #222;
 		}
 		i.fa-github:hover {
 			color: #111;
 		}
 		i.fa-linkedin-square:hover {
-			color: #1b5480;
+			color: #03659A;
 		}
 		i.fa-stack-overflow:hover {
 			color: #FF9900;
 		}
-	}
-
-	.pdf-button {
-		position: absolute;
-		top: 5px;
-		left: 5px;
-		display: block;
-		background: rgb(88, 187, 101);
-		border-radius: 0.2rem;
-		padding: 0.5rem 1rem;
-		color: white;
-		text-decoration: none;
+		i.fa-twitter:hover {
+			color: #4099FF;
+		}
 	}
 }

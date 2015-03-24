@@ -6,18 +6,10 @@
                 <h3>{{title}}</h3>
                 <ul class="meta">
                     <li>{{timespan}}</li>
-                    <li><i class="fa fa-globe"></i> {{location}}</li>
+                    {{!-- <li><i class="fa fa-globe"></i> {{location}}</li> --}}
                 </ul>
             </header>
-
-			{{#if topics}}
-                <p>Including topics such as:</p>
-                <ul>
-					{{#each topics}}
-                        <li>{{this}}</li>
-					{{/each}}
-                </ul>
-			{{/if}}
+			<p>{{body}}</p>
         </div>
 	{{/each}}
 </section>
