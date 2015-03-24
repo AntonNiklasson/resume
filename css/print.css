@@ -3,18 +3,12 @@
 html {
   font-size: 15px; }
 
-/* Hide all icons in print. */
-i.fa {
-  /*display: none;*/ }
-
 .site-wrap {
   margin: 0 auto; }
 
 .site-wrap > header {
   padding: 1rem 0;
   margin: 0; }
-  .site-wrap > header h1 {
-    font-size: 2.5rem; }
   .site-wrap > header ul.socials {
     display: none; }
 
@@ -22,10 +16,12 @@ section h2 {
   border: none; }
 
 .item {
-  padding: 1rem;
-  margin: 0; }
+  margin: 0;
+  padding: .5rem; }
   .item h3 {
     font-size: 1.4rem; }
+  .item h4 {
+    color: #444; }
   .item img {
     display: none; }
   .item p {
@@ -36,12 +32,15 @@ section h2 {
 .item.education-item {
   margin-bottom: 1rem; }
 
+.item.education-item:last-child {
+  margin-bottom: 0; }
+
 .skills-table {
   border-color: gray; }
   .skills-table td {
-    padding: 1rem 0.5rem; }
+    padding: .3rem; }
   .skills-table td:nth-child(2) {
     font-weight: bold;
-    font-size: 0.9em; }
+    font-size: 1.1rem; }
 
 /*# sourceMappingURL=print.css.map */

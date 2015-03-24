@@ -6,11 +6,6 @@ html {
 	font-size: 15px;
 }
 
-/* Hide all icons in print. */
-i.fa {
-	/*display: none;*/
-}
-
 .site-wrap {
   margin: 0 auto;
 }
@@ -18,10 +13,6 @@ i.fa {
 .site-wrap > header {
 	padding: 1rem 0;
 	margin: 0;
-
-    h1 {
-      font-size: 2.5rem;
-    }
 
 	ul.socials {
 		display: none;
@@ -35,11 +26,14 @@ section {
 }
 
 .item {
-	padding: 1rem;
     margin: 0;
+    padding: .5rem;
 
     h3 {
       font-size: 1.4rem;
+    }
+    h4 {
+    	color: #444;
     }
 	img {
 		display: none;
@@ -52,16 +46,19 @@ section {
 	}
 }
 .item.education-item {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+.item.education-item:last-child {
+	margin-bottom: 0;
 }
 
 .skills-table {
 	border-color: gray;
 	td {
-		padding: 1rem 0.5rem;
+		padding: .3rem;
 	}
 	td:nth-child(2) {
 		font-weight: bold;
-		font-size: 0.9em;
+		font-size: 1.1rem;
 	}
 }
