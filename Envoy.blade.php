@@ -4,6 +4,7 @@
 	cd /var/www/cv.antonniklasson.se
 	git reset --hard HEAD
 	git pull origin master
+	npm install
 	bower install --allow-root
 	gulp template
 @endtask
