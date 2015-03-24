@@ -63,7 +63,8 @@
     font-size: 1rem;
     color: #888; }
   .item img {
-    max-width: 200px;
+    width: 180px;
+    min-width: 180px;
     border: 1px solid #CCC; }
   .item p {
     font-size: 1em;
