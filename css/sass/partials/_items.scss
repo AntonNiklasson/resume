@@ -8,15 +8,16 @@
 
 	h3 {
 		font-size: 1.6em;
+		span {
+			color: gray;
+		}
 	}
 	h4 {
 		font-size: 1rem;
 		color: #888;
 	}
 	img {
-		width: 150px;
-		min-width: 150px;
-		max-height: 90px;
+		max-width: 200px;
 		border: 1px solid #CCC;
 	}
 	p {
@@ -53,7 +54,7 @@
 .work-item {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 
 	hgroup {
 		margin-bottom: .5rem;

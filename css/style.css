@@ -1,9 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Average|Fjalla+One);
 .site-wrap > header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem 0; }
   .site-wrap > header .header-content {
     display: flex;
@@ -11,8 +7,9 @@
     justify-content: space-between; }
   .site-wrap > header h1 {
     text-transform: uppercase;
-    font-size: 3.3rem;
-    font-weight: normal; }
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center; }
   .site-wrap > header h1:first-word {
     font-weight: bold; }
   .site-wrap > header img.portrait {
@@ -21,36 +18,37 @@
     border: 3px solid gray; }
   .site-wrap > header .details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 75%;
     margin: .5rem auto;
+    padding: 0;
     font-size: 1rem; }
   .site-wrap > header ul.contacts {
-    margin: .5rem 2rem .5rem 0;
+    margin: 1rem 0;
     list-style: none;
     font-size: 1.1rem;
     font-weight: normal;
-    color: #444; }
+    color: #444;
+    text-align: center; }
   .site-wrap > header ul.socials {
     display: flex;
-    list-style: none;
-    font-size: 1.8rem; }
+    list-style: none; }
     .site-wrap > header ul.socials li {
       margin: 1rem; }
     .site-wrap > header ul.socials i {
-      color: #555;
-      font-size: 1.2em;
+      font-size: 1.5rem;
+      color: gray;
       transition: transform 0.8s ease, color 0.5s ease; }
-    .site-wrap > header ul.socials i:hover {
-      color: #222; }
     .site-wrap > header ul.socials i.fa-github:hover {
       color: #111; }
     .site-wrap > header ul.socials i.fa-linkedin-square:hover {
-      color: #1b5480; }
+      color: #03659A; }
     .site-wrap > header ul.socials i.fa-stack-overflow:hover {
       color: #FF9900; }
+    .site-wrap > header ul.socials i.fa-twitter:hover {
+      color: #4099FF; }
 
 .item {
   padding: 1rem;
@@ -59,13 +57,13 @@
     border-bottom: none; }
   .item h3 {
     font-size: 1.6em; }
+    .item h3 span {
+      color: gray; }
   .item h4 {
     font-size: 1rem;
     color: #888; }
   .item img {
-    width: 150px;
-    min-width: 150px;
-    max-height: 90px;
+    max-width: 200px;
     border: 1px solid #CCC; }
   .item p {
     font-size: 1em;
@@ -91,7 +89,7 @@
 .work-item {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: flex-start; }
   .work-item hgroup {
     margin-bottom: .5rem; }
   .work-item .content {
@@ -109,10 +107,12 @@
   .skills-table tr:last-child {
     border-bottom: none; }
   .skills-table td:nth-child(1) {
-    width: 50%;
+    width: 75%;
     padding: .5rem; }
   .skills-table td:nth-child(2) {
-    font-style: italic;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: normal;
     text-align: right; }
   .skills-table ul {
     list-style: none;
@@ -142,7 +142,7 @@ body {
   font-size: 14px;
   color: #333; }
 
-.sansserif, .education-item header .meta li, .skills-table td:nth-child(1), h1, h2, h3, h4, h5, h6 {
+.sansserif, .education-item header .meta li, .skills-table td:nth-child(1), .skills-table td:nth-child(2), h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif; }
 
 .serif, .skills-table ul, body {

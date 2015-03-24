@@ -15,11 +15,14 @@
 
 	td:nth-child(1) {
 		@extend .sansserif;
-		width: 50%;
+		width: 75%;
 		padding: .5rem;
 	}
 	td:nth-child(2) {
-		font-style: italic;
+		@extend .sansserif;
+		font-size: 1.1rem;
+		font-style: normal;
+		font-weight: normal;
 		text-align: right;
 	}
 
