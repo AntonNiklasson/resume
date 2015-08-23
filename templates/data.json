@@ -1,141 +1,141 @@
 {
-  "title": "Anton Niklasson",
-  "portrait": "/imgs/portrait.jpg",
-  "contacts": [
-    "070 499 88 15",
-    "antonniklasson.se",
-    "niklasson.anton[a]gmail.com"
-  ],
-  "socials": {
-    "fa-github": "http://www.github.com/AntonNiklasson",
-    "fa-linkedin-square": "http://se.linkedin.com/in/antonniklasson/",
-    "fa-stack-overflow": "http://stackoverflow.com/users/1245042/antonniklasson",
-    "fa-twitter": "http://twitter.com/AntonNiklasson"
-  },
-  "goals": {
-    "title": "Goals",
-    "body": "I would like to work in an innovative and fast-paced environment with a team contributing to making the world a better place."
-  },
-  "work": {
-    "title": "Experience",
-    "items": [
-      {
-      "image": "imgs/netlight.png",
-      "title": "Next9 Adept",
-      "organization": "Netlight",
-      "timelabel": "January 2015 - Present",
-      "description": "Next9 is a mentorship program. It concists of 9 elected students which each are assigned a mentor. We all meet about once a month and on top of that I meet with my mentor in private once or twice each month. We discuss my goals and my nearby future and what I can improve on to reach all those goals."
-      },
-      {
-        "image": "imgs/netlight.png",
-        "title": "Student Ambassador",
-        "organization": "Netlight",
-        "timelabel": "June 2014 - Present",
-        "description": "Netlight has a huge demand to hire awesome people. My mission is to help them find driven and competent people that would be a good fit to work at Netlight. This means being aware of what students are looking for in a future employer and how Netlight can be that organization."
-      },
-      {
-        "title": "Sole Proprietor",
-        "organization": "ANWP",
-        "timelabel": "November 2009 - Present",
-        "description": "I have worked with a number of small to medium sized companies. Most of them were non-technical in the sense that they did not have that much knowledge about the web in general. That meant I had to work a lot with acctually explaining which content might work, what a CMS is and such. I also had to work a lot with time plans and explaining what takes time in a development process."
-      },
-      {
-        "image": "imgs/LinkUniv_logo_en.gif",
-        "title": "PBL Group Supervisor",
-        "organization": "Linköping University",
-        "timelabel": "August 2013 - December 2014",
-        "description": "Problem Based Learning was something new to me when I came to LiU. I really enjoyed it and decided that I wanted to explore how a group like that acctually functions. I learned a lot around group dynamics, how to optimize a group and how no group two groups are equla in terms of what works and what does not."
-      },
-      {
-        "image": "imgs/img_per-per-logo.png",
-        "title": "Web Developer",
-        "organization": "IT-bolaget Per&Per",
-        "timelabel": "Summer Internship 2014",
-        "description": "My mission was to figure if, and possibly how, Per&Per could bring their maps to the web. They had a working product on both Android and iOS and wanted to do the same thing in a browser. The end product was a working prototype showing off some of the most requested features."
-      },
-      {
-        "image": "imgs/LinkUniv_logo_en.gif",
-        "title": "Lab Assistant",
-        "organization": "Linköping University",
-        "timelabel": "January 2013 - April 2013",
-        "description": "An introductory course in web programming. I decided to get involved in this to improve on my pedgogical skill."
-      },
-      {
-        "image": "imgs/dsektionen-logo.png",
-        "title": "Head of Corporate Relations",
-        "organization": "Datateknologsektionen, Linköping University",
-        "timelabel": "June 2013 - June 2014",
-        "description": "Myself and a group of 5-10 students worked on trying to create opportunities for students and companies to meet."
-      }
-    ]
-  },
-  "education": {
-    "title": "Education",
-    "items": [
-      {
-        "title": "Master of Science in Information Technology, Linköping University",
-        "timespan": "2011 - 2016",
-        "location": "Linköping",
-        "body": "I have really enjoyed my time so far at LiU. I have grown as a person and I feel more condfident in everything I take on in life. I am really interested in software development and therefore I am currently focusing on learning new programming languages, architecture and design principles. Most of the courses I chose for my Masters degree are either entirely focused on code, or something closely related to that."
-      },
-      {
-        "title": "Nynäshamns Gymnasium, Science Program",
-        "timespan": "2006 - 2009",
-        "location": "Nynäshamn",
-        "body": "I was really into math and physics, and that is why I chose science. I studied introductory programming, database design, CAD and lots of math and physics."
-      }
-    ]
-  },
-  "skills": {
-    "title": "Skills",
-    "items": [
-      {
-        "title": "PHP",
-        "topics": ["Laravel", "Composer", "WordPress"],
-        "knowledge": "Very good knowledge"
-      },
-      {
-        "title": "JavaScript",
-        "topics": ["Node", "Angular", "Meteor", "jQuery", "WebGL", "Protobuf"],
-        "knowledge": "Very good knowledge"
-      },
-      {
-        "title": "HTML + CSS",
-        "topics": ["Bootstrap", "Foundation", "Compass", "Pre-processors", "Gulp", "Grunt", "Responsiveness"],
-        "knowledge": "Very good knowledge"
-      },
-      {
-        "title": "Java",
-        "topics": ["Android", "Spring", "Swing"],
-        "knowledge": "Good knowledge"
-      },
-      {
-        "title": "C#",
-        "knowledge": "Good knowledge",
-        "topics": [".NET", "WPF"]
-      },
-      {
-        "title": "Databases",
-        "topics": ["MySQL", "SQLite", "MongoDB"],
-        "knowledge": "Good knowledge"
-      },
-      {
-        "title": "Python",
-        "knowledge": "Basic Knowledge",
-        "topics": ["Flask", "Pygame"]
-      },
-      {
-        "title": "C++",
-        "knowledge": "Basic knowledge"
-      },
-      {
-        "title": "Go",
-        "knowledge": "Basic knowledge"
-      },
-      {
-        "title": "Photoshop, Illustrator",
-        "knowledge": "Basic knowledge"
-      }
-    ]
-  }
+	"title": "Anton Niklasson",
+	"portrait": "/imgs/portrait.jpg",
+	"contacts": [
+		"antonniklasson.se",
+		"niklasson.anton[a]gmail.com"
+	],
+	"socials": {
+		"fa-github": "http://www.github.com/AntonNiklasson",
+		"fa-linkedin-square": "http://se.linkedin.com/in/antonniklasson/",
+		"fa-stack-overflow": "http://stackoverflow.com/users/1245042/antonniklasson",
+		"fa-twitter": "http://twitter.com/AntonNiklasson"
+	},
+	"goals": {
+		"title": "Goals",
+		"body": "I would like to work in an innovative and fast-paced environment with a team contributing to making the world a better place."
+	},
+	"work": {
+		"title": "Experience",
+		"items": [
+			{
+				"image": "imgs/attentec.png",
+				"title": "Software Engineer",
+				"organization": "Attentec",
+				"timelabel": "Summer Internship 2015",
+				"description": "Me, and three other students, created a minimalistic racing game for Android, iOS and Windows Phone using Corona SDK. It is focused on racing people in the same wifi network. I really am super proud over what we accomplished in just a few weeks."
+			},
+			{
+				"image": "imgs/netlight.png",
+				"title": "Student Ambassador",
+				"organization": "Netlight",
+				"timelabel": "June 2014 - Present",
+				"description": "Netlight has a huge demand to hire awesome people. My mission is to help them find driven and competent people that would be a good fit to work at Netlight. This means being aware of what students are looking for in a future employer and how Netlight can be that organization."
+			},
+			{
+				"image": "imgs/netlight.png",
+				"title": "Next9 Adept",
+				"organization": "Netlight",
+				"timelabel": "January 2015 - June 2015",
+				"description": "Next9 is a mentorship program. It concists of 9 elected students which each are assigned a mentor. We all meet about once a month and on top of that I meet with my mentor in private once or twice each month. We discuss my goals and my nearby future and what I can improve on to reach all those goals."
+			},
+			{
+				"image": "imgs/LinkUniv_logo_en.gif",
+				"title": "PBL Group Supervisor",
+				"organization": "Linköping University",
+				"timelabel": "August 2013 - December 2014",
+				"description": "Problem Based Learning was something new to me when I came to LiU. I really enjoyed it and decided that I wanted to explore how a group like that acctually functions. I learned a lot around group dynamics, how to optimize a group and how no group two groups are equla in terms of what works and what does not."
+			},
+			{
+				"image": "imgs/img_per-per-logo.png",
+				"title": "Web Developer",
+				"organization": "IT-bolaget Per&Per",
+				"timelabel": "Summer Internship 2014",
+				"description": "My mission was to figure if, and possibly how, Per&Per could bring their maps to the web. They had a working product on both Android and iOS and wanted to do the same thing in a browser. The end product was a working prototype showing off some of the most requested features."
+				},
+			{
+				"image": "imgs/LinkUniv_logo_en.gif",
+				"title": "Lab Assistant",
+				"organization": "Linköping University",
+				"timelabel": "January 2013 - April 2013",
+				"description": "An introductory course in web programming. I decided to get involved in this to improve on my pedgogical skill."
+			},
+			{
+				"image": "imgs/dsektionen-logo.png",
+				"title": "Head of Corporate Relations",
+				"organization": "Datateknologsektionen, Linköping University",
+				"timelabel": "June 2013 - June 2014",
+				"description": "Myself and a group of 5-10 students worked on trying to create opportunities for students and companies to meet."
+			}
+		]
+	},
+	"education": {
+		"title": "Education",
+		"items": [
+			{
+				"title": "Master of Science in Information Technology, Linköping University",
+				"timespan": "2011 - 2016",
+				"location": "Linköping",
+				"body": "I have really enjoyed my time so far at LiU. I have grown as a person and I feel more condfident in everything I take on in life. I am really interested in software development and therefore I am currently focusing on learning new programming languages, architecture and design principles. Most of the courses I chose for my Masters degree are either entirely focused on code, or something closely related to that."
+				},
+			{
+				"title": "Nynäshamns Gymnasium, Science Program",
+				"timespan": "2006 - 2009",
+				"location": "Nynäshamn",
+				"body": "I was really into math and physics, and that is why I chose science. I studied introductory programming, database design, CAD and lots of math and physics."
+			}
+		]
+	},
+	"skills": {
+		"title": "Skills",
+		"items": [
+			{
+				"title": "PHP",
+				"topics": ["Laravel", "Composer", "WordPress"],
+				"knowledge": "Very good knowledge"
+			},
+			{
+				"title": "JavaScript",
+				"topics": ["Node", "Angular", "Meteor", "jQuery", "WebGL", "Protobuf"],
+				"knowledge": "Very good knowledge"
+			},
+			{
+				"title": "HTML + CSS",
+				"topics": ["Bootstrap", "Foundation", "Compass", "Pre-processors", "Gulp", "Grunt", "Responsiveness"],
+				"knowledge": "Very good knowledge"
+			},
+			{
+				"title": "Java",
+				"topics": ["Android", "Spring", "Swing"],
+				"knowledge": "Good knowledge"
+			},
+			{
+				"title": "C#",
+				"knowledge": "Good knowledge",
+				"topics": [".NET", "WPF"]
+			},
+			{
+				"title": "Databases",
+				"topics": ["MySQL", "SQLite", "MongoDB"],
+				"knowledge": "Good knowledge"
+			},
+			{
+				"title": "Python",
+				"knowledge": "Basic Knowledge",
+				"topics": ["Flask", "Pygame"]
+			},
+			{
+				"title": "C++",
+				"knowledge": "Basic knowledge"
+			},
+			{
+				"title": "Go",
+				"knowledge": "Basic knowledge"
+			},
+			{
+				"title": "Photoshop, Illustrator",
+				"knowledge": "Basic knowledge"
+			}
+		]
+	}
 }
