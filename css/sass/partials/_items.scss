@@ -19,7 +19,7 @@
 	img {
 		width: 180px;
 		min-width: 180px;
-		border: 1px solid #CCC;
+		margin-left: .5rem;
 	}
 	p {
 		font-size: 1em;
@@ -55,7 +55,7 @@
 .work-item {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 
 	hgroup {
 		margin-bottom: .5rem;

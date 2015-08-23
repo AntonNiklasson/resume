@@ -28,6 +28,7 @@ section {
 .item {
     margin: 0;
     padding: .5rem;
+    page-break-inside: avoid;
 
     h3 {
       font-size: 1.4rem;

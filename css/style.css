@@ -65,7 +65,7 @@
   .item img {
     width: 180px;
     min-width: 180px;
-    border: 1px solid #CCC; }
+    margin-left: .5rem; }
   .item p {
     font-size: 1em;
     text-align: justify; }
@@ -90,7 +90,7 @@
 .work-item {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: center; }
   .work-item hgroup {
     margin-bottom: .5rem; }
   .work-item .content {
