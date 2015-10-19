@@ -120,6 +120,10 @@
 				"knowledge": "Good knowledge"
 			},
 			{
+				"title": "Lua",
+				"knowledge": "Good knowledge"
+			},
+			{
 				"title": "Python",
 				"knowledge": "Basic Knowledge",
 				"topics": ["Flask", "Pygame"]
