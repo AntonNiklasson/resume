@@ -19,6 +19,13 @@
 		"title": "Experience",
 		"items": [
 			{
+                                "image": "imgs/accedo.png",
+                                "title": "Master Thesis",
+                                "organization": "Accedo",
+                                "timelabel": "February 2016 -",
+                                "description": "A deep dive into React Native. The goal is to figure out if it is a viable solution for future projects at Accedo."
+                        },
+                        {
 				"image": "imgs/attentec.png",
 				"title": "Software Engineer",
 				"organization": "Attentec",
