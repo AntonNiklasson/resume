@@ -19,13 +19,13 @@
 		"title": "Experience",
 		"items": [
 			{
-                                "image": "imgs/accedo.png",
-                                "title": "Master Thesis",
-                                "organization": "Accedo",
-                                "timelabel": "February 2016 -",
-                                "description": "A deep dive into React Native. The goal is to figure out if it is a viable solution for future projects at Accedo."
-                        },
-                        {
+				"image": "imgs/accedo.png",
+				"title": "Master Thesis",
+				"organization": "Accedo",
+				"timelabel": "February 2016 -",
+				"description": "A deep dive into React Native. The goal is to figure out if it is a viable solution for future projects at Accedo."
+			},
+			{
 				"image": "imgs/attentec.png",
 				"title": "Software Engineer",
 				"organization": "Attentec",
@@ -36,7 +36,7 @@
 				"image": "imgs/netlight.png",
 				"title": "Student Ambassador",
 				"organization": "Netlight",
-				"timelabel": "June 2014 - Present",
+				"timelabel": "June 2014 - June 2015",
 				"description": "Netlight has a huge demand to hire awesome people. My mission is to help them find driven and competent people that would be a good fit to work at Netlight. This means being aware of what students are looking for in a future employer and how Netlight can be that organization."
 			},
 			{
