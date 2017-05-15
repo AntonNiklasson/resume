@@ -1,2 +1,2 @@
-index.html
-*.css.map
+node_modules
+dist

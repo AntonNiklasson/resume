@@ -1,0 +1,60 @@
+@import url("//fonts.googleapis.com/css?family=Average|Fjalla+One")
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+
+.sansserif
+	font-family 'Fjalla One', sans-serif
+
+body
+	font-size 14px
+	font-family 'Helvetica Neue', Helvetica, serif
+	color #333
+
+h1, h2, h3, h4, h5, h6
+	@extend .sansserif
+	font-weight normal
+
+h1
+	font-size 4rem
+h2
+	font-size 2.8rem
+h3
+	font-size 2.5rem
+h4
+	font-size 2rem
+
+.site-wrap
+	display flex
+	flex-flow row wrap
+	width 800px
+	margin 0 auto
+
+.left, .right
+	flex 0 0 50%
+	padding 1em
+
+.left
+	flex-basis 55%
+.right
+	flex-basis 45%
+
+section
+	margin-bottom 1rem
+
+	&:last-child
+		margin-bottom 0
+		padding-bottom 0
+
+	.section-title
+		border-bottom 1px solid #AAA
+		text-transform uppercase
+		font-size 2rem
+		padding 0
+
+@import "partials/_header"
+@import "partials/_items"
+@import "partials/_skillstable"
+@import "partials/_goals"

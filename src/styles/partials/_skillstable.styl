@@ -1,0 +1,43 @@
+.skills-table
+	width 90%
+	margin 1rem auto
+	font-size 1.1rem
+	font-weight bold
+	border none
+	border-collapse collapse
+
+	tr
+		border-bottom 1px solid #CCC
+		&last-child
+			border-bottom none
+
+	td
+		padding 0.5em 0
+
+	td:nth-child(1)
+		@extend .sansserif
+		padding .3rem
+
+	td:nth-child(2)
+		@extend .sansserif
+		font-size 0.9rem
+		font-style normal
+		font-weight normal
+		text-align right
+		text-transform uppercase
+
+	ul
+		list-style none
+		color #666
+		font-size 0.9rem
+		margin-top .5rem
+		font-weight normal
+
+	li
+		display inline
+
+		&:after
+			content ", "
+
+		&:last-childafter
+			content "."

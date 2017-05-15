@@ -1,0 +1,39 @@
+.item
+	padding 0.5rem
+	border-bottom 1px solid #DDD
+	&:last-child
+		border-bottom none
+	h3
+		font-size 1.5em
+		span
+			color gray
+	h4
+		font-size 1rem
+		color #888
+	img
+		width 90px
+		min-width 90px
+		margin-left .5rem
+
+.education-item
+	display flex
+	flex-direction column
+	header
+		margin-bottom .2rem
+		.meta
+			list-style none
+			font-size 1rem
+			color #888
+			margin 0
+			li
+				@extend .sansserif
+				display inline
+				margin-right 1.5rem
+
+.experience-item
+	display flex
+	flex-direction column
+	justify-content space-between
+	.content
+		display flex
+		align-items flex-start

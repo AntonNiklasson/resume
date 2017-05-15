@@ -1,42 +1,41 @@
-var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
-var plumber = require('gulp-plumber');
-var webserver = require('gulp-webserver');
-var fs = require('fs');
-var handlebars = require('gulp-compile-handlebars');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const stylus = require('gulp-stylus');
+const plumber = require('gulp-plumber');
+const webserver = require('gulp-webserver');
+const fs = require('fs');
+const handlebars = require('gulp-compile-handlebars');
+const rename = require('gulp-rename');
 
-
-gulp.task('default', ['template', 'sass', 'webserver'], function() {
-	gulp.watch(['./css/sass/**/*.scss'], ['sass']);
-	gulp.watch(['./templates/**/*'], ['template']);
+gulp.task('default', ['images', 'templates', 'styles', 'webserver'], function() {
+	gulp.watch(['./src/**/*.styl'], ['styles']);
+	gulp.watch(['./src/templates/**/*'], ['templates']);
 });
 
 gulp.task('webserver', function() {
-	return gulp.src('.')
+	return gulp.src('dist')
 		.pipe(webserver({
-			livereload: true,
-			directoryListing: false,
-			open: false,
-			port: 5000
+			livereload: true
 		}));
 });
 
-gulp.task('sass', function() {
-	return gulp.src(['css/sass/*.scss'])
+gulp.task('styles', function() {
+	return gulp.src(['src/styles/*.styl'])
 		.pipe(plumber())
-		.pipe(sass())
-		.pipe(gulp.dest('./css'));
+		.pipe(stylus({ compress: true }))
+		.pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('template', function() {
-	var data = JSON.parse(fs.readFileSync('./templates/data.json', 'utf8'));
-	var options = {
-		batch: ['./templates/partials']
-	};
-
-	return gulp.src('templates/index.hbs')
-		.pipe(handlebars(data, options))
+gulp.task('templates', function() {
+	return gulp.src('src/templates/index.hbs')
+		.pipe(handlebars(
+			require('./src/templates/data'),
+			{ batch: ['./src/templates/partials'] }
+		))
 		.pipe(rename('index.html'))
-		.pipe(gulp.dest('./'));
+		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('images', () => {
+	return gulp.src('./src/imgs/**/*')
+		.pipe(gulp.dest('dist/imgs'))
 });
