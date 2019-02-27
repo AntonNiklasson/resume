@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: #333;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 3em;
+}
+
+.wrapper {
+  width: calc(100% - 4em);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: #555;
+  font-size: 1.2em;
+}
+.contacts li {
+  margin: 0 0.5em;
+}
+
+section {
+  margin: 1em 0;
+}
+
+.experience,
+.education {
+  margin: 1em 0;
+}
