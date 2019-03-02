@@ -4,6 +4,7 @@
   "author": "Anton Niklasson <niklasson.anton@gmail.com>",
   "scripts": {
     "dev": "gatsby develop",
+    "deploy": "./scripts/deploy.sh",
     "prod:build": "gatsby build",
     "prod:run": "gatsby serve"
   },
