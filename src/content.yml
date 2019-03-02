@@ -1,11 +1,10 @@
 meta:
   title: Anton Niklasson
   contacts:
-    phone: "+46704998815"
-    email: niklasson.anton@gmail.com
+    email: niklasson.anton[a]gmail.com
 
 experiences:
-  - title: Frontendutvecklare
+  - title: Frontend Development
     organization: Creuna
     time:
       from:
@@ -15,7 +14,7 @@ experiences:
     description: |
       Et dolor id reprehenderit aute ut ullamco id enim nisi. Non sint aliquip nisi cupidatat tempor eu ullamco. Mollit do veniam duis labore in. Adipisicing eiusmod dolore occaecat qui aliquip laborum laboris ad excepteur.
 
-  - title: Frilansande utvecklare
+  - title: Freelancing
     organization: Anton Niklasson AB
     time:
       from:
@@ -25,7 +24,7 @@ experiences:
     description: |
       Et dolor id reprehenderit aute ut ullamco id enim nisi. Non sint aliquip nisi cupidatat tempor eu ullamco. Mollit do veniam duis labore in. Adipisicing eiusmod dolore occaecat qui aliquip laborum laboris ad excepteur.
 
-  - title: Fullstack Developer
+  - title: Fullstack JavaScript
     organization: Bonnier News
     time:
       from:
@@ -38,7 +37,7 @@ experiences:
       Part of the team that built [Bonnier News](http://www.bonniernews.se) new publishing platform. My contribution included frontend development, backend integrations, design systems, agile work and technical interviews.
       Our main focus was to replace older tools with a more usable and unobtrusive suite of systems for optimizing the journalism is produced at Bonnier News.
 
-  - title: Consultant
+  - title: Technical Consultant
     organization: Netlight
     time:
       from:
@@ -50,7 +49,7 @@ experiences:
     description: |
       Netlight provides genuine consulting services for leaders in the digital industry. The combination of competence, creativity and business sense is what makes Netlight stand out as a service provider, and are also the characteristics of each individual Netlighter.
 
-  - title: Frontend Development
+  - title: Frontend & Sales Support
     organization: Accedo
     time:
       from:
@@ -72,7 +71,7 @@ experiences:
         month: 9
         year: 2015
     description: |
-      Me and three others built a top-down multiplayer racing game for all the majoir mobile phone platforms during just a few short weeks. Availble on [iOS](https://itunes.apple.com/se/app/attentrack/id1055358189?mt=8), [Android](https://play.google.com/store/apps/details?id=se.attentec.sommarjobb2015.attentrac&hl=en_US) and Windows Phone
+      Me and three others built a top-down multiplayer racing game for all the majoir mobile phone platforms during just a few short weeks. Availble on iOS, Android and Windows Phone.
 
   - title: R&D
     organization: Per & Per

@@ -5,8 +5,8 @@
 }
 
 body {
-  background: white;
-  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #13292c;
+  font: 16px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
@@ -20,38 +20,17 @@ h6 {
   color: #333;
   line-height: 1.2;
 }
-h1 {
-  font-size: 3em;
-}
 
 .wrapper {
-  width: calc(100% - 4em);
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 21cm;
+  margin: 1em auto;
+  padding: 0 2em;
+  background: white;
+  border: 1px solid #AAA;
 }
 
-header {
-  margin: 1em;
-  padding: 1em;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-}
-.contacts {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  color: #555;
-  font-size: 1.2em;
-}
-.contacts li {
-  margin: 0 0.5em;
-}
-
-section {
-  margin: 1em 0;
-}
-
-.experience,
-.education {
-  margin: 1em 0;
+span.emoji {
+  margin: 0.1em;
+  font-size: 1em;
+  vertical-align: text-bottom;
 }
