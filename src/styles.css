@@ -5,9 +5,8 @@
 }
 
 body {
-  background: #13292c;
+  background: #EAEAEA;
   font: 16px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
 }
 
 h1,
@@ -16,17 +15,9 @@ h3,
 h4,
 h5,
 h6 {
+  color: currentColor;
   font-weight: 500;
-  color: #333;
   line-height: 1.2;
-}
-
-.wrapper {
-  max-width: 21cm;
-  margin: 1em auto;
-  padding: 0 2em;
-  background: white;
-  border: 1px solid #AAA;
 }
 
 span.emoji {

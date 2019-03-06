@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `cv.antonniklasson.se`,
     description: ``,
-    author: `Anton Niklasson <niklasson.anton@gmail.com`
+    author: `Anton Niklasson <niklasson.anton@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/content.yml`
-      }
-    }
-  ]
-};
+        path: `./src/content.yml`,
+      },
+    },
+  ],
+}
