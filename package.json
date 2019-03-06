@@ -8,7 +8,7 @@
     "prod:build": "gatsby build",
     "prod:run": "gatsby serve",
     "docker:build": "docker build -t resume .",
-    "docker:run": "docker run -d -p 8000:80 --name resume-container resume"
+    "docker:run": "docker run -d --rm -p 8000:80 --name resume-container resume"
   },
   "dependencies": {
     "gatsby": "^2.1.11",

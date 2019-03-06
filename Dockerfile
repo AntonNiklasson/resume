@@ -11,7 +11,8 @@ COPY src src
 COPY gatsby-browser.js .
 COPY gatsby-config.js .
 RUN yarn prod:build
-RUN chmod -R +r /var/www
+RUN rm -r node_modules
+RUN chmod -R +r .
 
 CMD rm /etc/nginx/nginx.conf
 COPY nginx.conf /etc/nginx/nginx.conf
