@@ -4,28 +4,27 @@ import emoji from 'node-emoji'
 
 const Container = styled.header`
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0.5em 0;
+	padding: 0 0 .5em 0;
   border-bottom: 1px solid ${p => p.theme.border};
-
-  hgroup {
-    display: flex;
-    align-items: center;
-  }
 
   h1 {
     font-size: 2em;
-    white-space: nobreak;
-
-    @media (max-width: 700px) {
-      font-size: 3em;
-    }
+		white-space: nowrap;
   }
 
   .emoji {
-    font-size: 2.2em;
-  }
+		font-size: 1.2em;
+
+		@media (max-width: 600px) {
+			display: none;
+		}
+	}
+
+	@media (max-width: 16cm) {
+		flex-direction: column;
+		align-items: center;
+	}
 `
 const MetaList = styled.ul`
   list-style: none;
@@ -36,14 +35,9 @@ const MetaList = styled.ul`
 
 export default ({ title, contacts }) => (
   <Container>
-    <hgroup>
-      <h1>{title}</h1>
-      <span className="emoji">{emoji.get('male-technologist')}</span>
-    </hgroup>
+    <h1>{title}<span className="emoji">{emoji.get('male-technologist')}</span></h1>
     <MetaList>
-      <li>antonniklasson.se</li>
-      <li>github.com/antonniklasson</li>
-      <li>linkedin.com/in/antonniklasson</li>
+      <li>www.antn.se</li>
     </MetaList>
   </Container>
 )

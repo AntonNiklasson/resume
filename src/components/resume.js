@@ -15,6 +15,7 @@ const theme = {
 }
 
 const Wrapper = styled.div`
+	width: 100%;
   max-width: 21cm;
   margin: 1em auto 3em auto;
   padding: 2em;
@@ -23,6 +24,28 @@ const Wrapper = styled.div`
   border-radius: 5px;
   box-shadow: 0 10px 10px -8px ${p => p.theme.shadow};
   color: ${p => p.theme.text};
+
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: ${p => p.theme.text};
+    &:hover {
+      color: ${p => p.theme.accent};
+    }
+  }
+
+  @media print {
+    a {
+			font-weight: normal;
+			text-decoration: none;
+    }
+	}
+
+	@media (max-width: 21cm) {
+		margin: 0;
+		border: none;
+		border-radius: unset;
+	}
 `
 const Section = styled.section`
   width: 80%;

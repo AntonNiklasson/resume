@@ -6,7 +6,7 @@
 
 body {
   background: #EAEAEA;
-  font: 16px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.2 "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -25,3 +25,5 @@ span.emoji {
   font-size: 1em;
   vertical-align: text-bottom;
 }
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600');

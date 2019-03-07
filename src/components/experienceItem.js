@@ -10,6 +10,7 @@ const Header = styled.header`
   flex-direction: column-reverse;
 
   time {
+		font-size: .9em;
     color: ${p => p.theme.textLight};
   }
 `
