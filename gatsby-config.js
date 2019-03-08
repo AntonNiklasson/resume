@@ -13,5 +13,6 @@ module.exports = {
         path: `./src/content.yml`,
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 }

@@ -8,11 +8,12 @@
     "prod:build": "gatsby build",
     "prod:run": "gatsby serve",
     "docker:build": "docker build -t resume .",
-    "docker:run": "docker run -d --rm -p 8000:80 --name resume-container resume"
+    "docker:run": "docker run -d -p 8000:80 --name resume-container resume"
   },
   "dependencies": {
     "gatsby": "^2.1.11",
     "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-styled-components": "^3.0.6",
     "gatsby-source-filesystem": "^2.0.21",
     "gatsby-transformer-yaml": "^2.1.8",
     "react": "^16.8.2",

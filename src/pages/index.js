@@ -1,8 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Resume from "../components/resume"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../layout'
+import Resume from '../components/resume'
 
-export default props => <Resume {...props.data.allSrcYaml.edges[0].node} />
+export default props => (
+  <Layout>
+    <Resume {...props.data.allSrcYaml.edges[0].node} />
+  </Layout>
+)
 
 export const query = graphql`
   {
