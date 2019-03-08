@@ -10,7 +10,7 @@ echo "3. Building image";
 yarn docker:build
 
 echo "4. Stop and remove previous container"
-docker stop resume-container ; docker remove resume-container
+docker stop resume-container ; docker rm resume-container
 
 echo "4. Starting docker conatiner";
 yarn docker:run

@@ -1,7 +1,5 @@
 module.exports = {
   siteMetadata: {
-    title: `cv.antonniklasson.se`,
-    description: ``,
     author: `Anton Niklasson <niklasson.anton@gmail.com`,
   },
   plugins: [

@@ -3,11 +3,15 @@ import { graphql } from 'gatsby'
 import Layout from '../layout'
 import Resume from '../components/resume'
 
-export default props => (
-  <Layout>
-    <Resume {...props.data.allSrcYaml.edges[0].node} />
-  </Layout>
-)
+export default props => {
+  const data = props.data.allSrcYaml.edges[0].node
+
+  return (
+		<Layout {...data.meta}>
+      <Resume {...data} />
+    </Layout>
+  )
+}
 
 export const query = graphql`
   {
@@ -15,7 +19,8 @@ export const query = graphql`
       edges {
         node {
           meta {
-            title
+						title
+						description
           }
           experiences {
             title
