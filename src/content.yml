@@ -13,7 +13,7 @@ experiences:
         year: 2018
       to: null
     description: |
-      Et dolor id reprehenderit aute ut ullamco id enim nisi. Non sint aliquip nisi cupidatat tempor eu ullamco. Mollit do veniam duis labore in. Adipisicing eiusmod dolore occaecat qui aliquip laborum laboris ad excepteur.
+      As a part of multiple different teams I contributed to design systems, frontend architecture, server-rendered React apps and internal tools for governement organizations and large coporations withing Finance.
 
   - title: Freelancing
     organization: Anton Niklasson AB
@@ -23,7 +23,7 @@ experiences:
         year: 2018
       to: null
     description: |
-      Et dolor id reprehenderit aute ut ullamco id enim nisi. Non sint aliquip nisi cupidatat tempor eu ullamco. Mollit do veniam duis labore in. Adipisicing eiusmod dolore occaecat qui aliquip laborum laboris ad excepteur.
+      Taking on various technical projects as my own boss.
 
   - title: Fullstack JavaScript
     organization: Bonnier News
@@ -38,7 +38,7 @@ experiences:
       Part of the team that built [Bonnier News](http://www.bonniernews.se) new publishing platform. My contribution included frontend development, backend integrations, design systems, agile work and technical interviews.
       Our main focus was to replace older tools with a more usable and unobtrusive suite of systems for optimizing the journalism is produced at Bonnier News.
 
-  - title: Technical Consultant
+  - title: Consultant
     organization: Netlight
     time:
       from:
@@ -72,7 +72,7 @@ experiences:
         month: 9
         year: 2015
     description: |
-      Me and three others built a top-down multiplayer racing game for all the majoir mobile phone platforms during just a few short weeks. Availble on iOS, Android and Windows Phone.
+      Built a top-down multiplayer racing game for all the majoir mobile phone platforms together with three other students. Availble on iOS, Android and Windows Phone.
 
   - title: R&D
     organization: Per & Per
@@ -83,35 +83,23 @@ experiences:
       to:
         month: 9
         year: 2014
-    description: |
-      Part of a small team that was assigned to research the possibilities of rendering maps on the client-side in a browser
 
 educations:
-  - title: Ms.C. Information Technology, Linköping University
+  - title: Ms.C. Information Technology
+    school: Linköping University
     time:
       from: 2011
       to: 2016
 
-  - title: Natural Science Program, Nynäshamns High School
+  - title: Natural Science Program
+    school: Nynäshamn High School
     time:
       from: 2006
       to: 2009
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+interests:
+  - React
+  - Design-systems
+  - CSS
+  - Agile development
+  - Tooling

@@ -38,12 +38,14 @@ export const query = graphql`
             description
           }
           educations {
-            title
+						title
+						school
             time {
               from
               to
             }
-          }
+					}
+					interests
         }
       }
     }

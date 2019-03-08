@@ -13,14 +13,6 @@ const Container = styled.header`
 		white-space: nowrap;
   }
 
-  .emoji {
-		font-size: 1.2em;
-
-		@media (max-width: 600px) {
-			display: none;
-		}
-	}
-
 	@media (max-width: 16cm) {
 		flex-direction: column;
 		align-items: center;
@@ -35,7 +27,7 @@ const MetaList = styled.ul`
 
 export default ({ title, contacts }) => (
   <Container>
-    <h1>{title}<span className="emoji">{emoji.get('male-technologist')}</span></h1>
+    <h1>{title}</h1>
     <MetaList>
       <li>www.antn.se</li>
     </MetaList>

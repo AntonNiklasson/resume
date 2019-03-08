@@ -15,7 +15,7 @@ const Header = styled.header`
   }
 `
 const Body = styled.div`
-  margin: 0.5em 0;
+	margin: 0;
   font-size: 0.9em;
 `
 

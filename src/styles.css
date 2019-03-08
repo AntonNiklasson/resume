@@ -27,3 +27,13 @@ span.emoji {
 }
 
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600');
+
+@page {
+	margin: 1cm;
+}
+
+@media print {
+	body {
+		background: transparent;
+	}
+}
