@@ -35,7 +35,7 @@ experiences:
         month: 9
         year: 2018
     description: |
-      Part of the team that built [Bonnier News](http://www.bonniernews.se) new publishing platform. My contribution included frontend development, backend integrations, design systems, agile work and technical interviews.
+      Part of the team that built Bonnier News new publishing platform. My contribution included frontend development, backend integrations, design systems, agile work and technical interviews.
       Our main focus was to replace older tools with a more usable and unobtrusive suite of systems for optimizing the journalism is produced at Bonnier News.
 
   - title: Consultant
@@ -97,9 +97,24 @@ educations:
       from: 2006
       to: 2009
 
-interests:
-  - React
-  - Design-systems
-  - CSS
-  - Agile development
-  - Tooling
+skills:
+  - title: JavaScript
+  - title: Design-systems
+  - title: Scalable CSS
+  - title: Agile processes
+  - title: Tooling
+  - title: Pairing & mobprogramming
+
+accounts:
+  - title: GitHub
+    url: https://github.com/AntonNiklasson
+    icon: github
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/antonniklasson/
+    icon: linkedin
+  - title: Twitter
+    url: https://www.twitter.com/AntonNiklasson
+    icon: twitter
+  - title: StackOverflow
+    url: https://stackoverflow.com/users/1245042/antonniklasson
+    icon: stackoverflow

@@ -11,8 +11,10 @@
     "docker:run": "docker run -d -p 8000:80 --name resume-container resume"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "gatsby": "^2.1.11",
     "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-react-svg": "^2.1.0",
     "gatsby-plugin-styled-components": "^3.0.6",
     "gatsby-source-filesystem": "^2.0.21",
     "gatsby-transformer-yaml": "^2.1.8",
@@ -20,6 +22,7 @@
     "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.0.6",
+    "react-media": "^1.9.2",
     "styled-components": "^4.1.3"
   }
 }

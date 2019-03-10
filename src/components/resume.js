@@ -1,9 +1,11 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
+import Media from 'react-media'
 import Header from './header'
+import Footer from './footer'
 import Experience from './experienceItem'
 import Education from './educationItem'
-import profilePhoto from '../anton.jpg'
+import Icon from './icon'
 
 const theme = {
   white: '#FFF',
@@ -17,7 +19,7 @@ const theme = {
 const Wrapper = styled.div`
   width: 100%;
   max-width: 21cm;
-  margin: 1em auto 3em auto;
+  margin: 1em auto;
   padding: 2em;
   background: ${p => p.theme.white};
   border: 1px solid ${p => p.theme.border};
@@ -34,11 +36,11 @@ const Wrapper = styled.div`
     }
   }
 
-	@media print {
-		margin: 0 auto;
-		padding: 0;
-		border: none;
-		box-shadow: none;
+  @media print {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    box-shadow: none;
 
     a {
       font-weight: normal;
@@ -61,12 +63,16 @@ const Section = styled.section`
     padding-left: 0.5em;
     border-left: 5px solid ${({ theme }) => theme.accent};
     text-transform: uppercase;
-	}
+  }
 
-	ul {
-		margin: 1em;
-		list-style: disc;
-	}
+  ul {
+    margin: 1em;
+    list-style: disc;
+
+    &.no-style {
+      list-style: none;
+    }
+  }
 `
 const ProfilePic = styled.img`
   display: block;
@@ -75,45 +81,74 @@ const ProfilePic = styled.img`
 const Grid = styled.main`
   display: grid;
   grid-template-columns: 3fr 2fr;
-	grid-template-areas: 'main sidebar';
-	grid-gap: 1em;
+  grid-template-areas: 'main sidebar';
+  grid-gap: 1em;
 `
 const Sidebar = styled.aside`
-	grid-area: 'sidebar';
-	padding: 0 0 0 1em;
-	border-left: 1px solid ${p => p.theme.border};
-`;
+  grid-area: 'sidebar';
+  padding: 0 0 0 1em;
+  border-left: 1px solid ${p => p.theme.border};
 
-const Resume = ({ meta, experiences, educations, interests }) => (
+  section:not(:last-child) {
+    border-bottom: 1px solid ${p => p.theme.border};
+  }
+`
+
+const Resume = ({ meta, experiences, educations, skills, accounts }) => (
   <ThemeProvider theme={theme}>
-    <Wrapper>
-      <Header {...meta} />
-      <Grid>
-        <Section area="main">
-          <h2>Experience</h2>
-          {experiences.map(experience => (
-            <Experience key={experience.title} {...experience} />
-          ))}
-				</Section>
-				<Sidebar>
+    <React.Fragment>
+      <Wrapper>
+        <Header {...meta} />
+        <Grid>
+          <Section area="main">
+            <h2>Experience</h2>
+            {experiences.map(experience => (
+              <Experience key={experience.title} {...experience} />
+            ))}
+          </Section>
+          <Sidebar>
+            {/*
 					<Section area="sidebar">
 						<ProfilePic src={profilePhoto} />
 					</Section>
-					<Section>
-						<h2>Interests</h2>
-						<ul>
-							{interests.map(interest => <li>{interest}</li>)}
-						</ul>
-					</Section>
-					<Section area="sidebar">
-						<h2>Education</h2>
-						{educations.map(education => (
-							<Education key={education.title} {...education} />
-						))}
-					</Section>
-				</Sidebar>
-      </Grid>
-    </Wrapper>
+					*/}
+            <Section>
+              <h2>Skills</h2>
+              <ul>
+                {skills.map(skill => (
+                  <li key={skill.title}>{skill.title}</li>
+                ))}
+              </ul>
+            </Section>
+            <Section area="sidebar">
+              <h2>Education</h2>
+              {educations.map(education => (
+                <Education key={education.title} {...education} />
+              ))}
+            </Section>
+            <Media query="print">
+              {matches =>
+                !matches ? (
+                  <Section area="sidebar">
+                    <ul className="no-style">
+                      {accounts.map(account => (
+                        <li key={account.url}>
+													<a href={account.url} target="_blank" rel="noopener noreferrer">
+                            {account.icon ? <Icon name={account.icon} /> : null}
+                            {account.title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </Section>
+                ) : null
+              }
+            </Media>
+          </Sidebar>
+        </Grid>
+      </Wrapper>
+      <Footer />
+    </React.Fragment>
   </ThemeProvider>
 )
 

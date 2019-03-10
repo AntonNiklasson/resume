@@ -7,7 +7,7 @@ export default props => {
   const data = props.data.allSrcYaml.edges[0].node
 
   return (
-		<Layout {...data.meta}>
+    <Layout {...data.meta}>
       <Resume {...data} />
     </Layout>
   )
@@ -19,8 +19,8 @@ export const query = graphql`
       edges {
         node {
           meta {
-						title
-						description
+            title
+            description
           }
           experiences {
             title
@@ -38,14 +38,21 @@ export const query = graphql`
             description
           }
           educations {
-						title
-						school
+            title
+            school
             time {
               from
               to
             }
-					}
-					interests
+          }
+          skills {
+            title
+          }
+          accounts {
+            title
+						url
+						icon
+          }
         }
       }
     }
