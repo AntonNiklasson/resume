@@ -1,35 +1,27 @@
-import React from 'react'
-import styled from 'styled-components'
-import emoji from 'node-emoji'
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.header`
   display: flex;
   justify-content: space-between;
-	padding: 0 0 .5em 0;
+  padding: 0 0 0.5em 0;
   border-bottom: 1px solid ${p => p.theme.border};
 
   h1 {
     font-size: 2em;
-		white-space: nowrap;
+    white-space: nowrap;
   }
 
-	@media (max-width: 16cm) {
-		flex-direction: column;
-		align-items: center;
-	}
-`
-const MetaList = styled.ul`
-  list-style: none;
-  font-size: 0.9em;
-  text-align: right;
-  color: ${p => p.theme.textLight};
-`
+  @media (max-width: 16cm) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
-export default ({ title, contacts }) => (
-  <Container>
-    <h1>{title}</h1>
-    <MetaList>
-      <li>www.antn.se</li>
-    </MetaList>
-  </Container>
-)
+export default function Header({ title }) {
+  return (
+    <Container>
+      <h1>{title}</h1>
+    </Container>
+  );
+}

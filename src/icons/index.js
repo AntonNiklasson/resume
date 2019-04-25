@@ -1,5 +1,5 @@
-import github from './github'
+import github from "./github";
 
 export default {
-  github,
-}
+  github
+};
