@@ -4,6 +4,9 @@
   "rules": {
     "react/prop-types": 0
   },
+	"env": {
+		"node": true
+	},
   "settings": {
     "react": {
       "version": "detect"

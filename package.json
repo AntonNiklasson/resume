@@ -4,11 +4,8 @@
   "author": "Anton Niklasson <niklasson.anton@gmail.com>",
   "scripts": {
     "dev": "gatsby develop",
-    "prod:deploy": "./scripts/deploy.sh",
     "prod:build": "gatsby build",
-    "prod:run": "gatsby serve",
-    "docker:build": "docker build -t resume .",
-    "docker:run": "docker run -d -p 8001:80 --name resume-container resume"
+    "deploy": "./scripts/deploy.js"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
@@ -23,6 +20,7 @@
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.0.6",
     "react-media": "^1.9.2",
+    "ssh-exec": "^2.0.0",
     "styled-components": "^4.1.3"
   }
 }
