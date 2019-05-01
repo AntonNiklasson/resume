@@ -13,7 +13,7 @@ experiences:
         year: 2018
       to: null
     description: |
-      As a part of multiple different teams I contributed to design systems, frontend architecture, server-rendered React apps and internal tools for governement organizations and large coporations withing Finance.
+      As a part of multiple different teams I contributed to design systems, frontend architecture, server-rendered React apps and internal tools for governement organizations and large coporations within Finance.
 
   - title: Freelancing
     organization: Anton Niklasson AB
@@ -73,6 +73,18 @@ experiences:
         year: 2015
     description: |
       Built a top-down multiplayer racing game for all the majoir mobile phone platforms together with three other students. Availble on iOS, Android and Windows Phone.
+
+  - title: JavaScript Development
+    organization: Per & Per
+    time:
+      from:
+        month: 6
+        year: 2014
+      to:
+        month: 9
+        year: 2014
+    description: |
+      Researched and prototyped vector-based maps to be run a browser.
 
 educations:
   - title: Ms.C. Information Technology
