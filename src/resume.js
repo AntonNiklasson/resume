@@ -1,11 +1,14 @@
-import React from "react";
-import styled, { ThemeProvider } from "styled-components";
-import Media from "react-media";
-import Header from "./header";
-import Footer from "./footer";
-import Experience from "./experienceItem";
-import Education from "./educationItem";
-import Icon from "./icon";
+import React from "react"
+import styled, { ThemeProvider } from "styled-components"
+import Media from "react-media"
+import {
+  Footer,
+  Header,
+  EducationItem,
+  ExperienceItem,
+  AccountItem
+} from "./components"
+import { MainGrid, Section, SectionHeading, Sidebar } from "./components/atoms"
 
 const theme = {
   white: "#FFF",
@@ -13,8 +16,10 @@ const theme = {
   textLight: "#666",
   border: "#DDD",
   accent: "forestgreen",
-  shadow: "#00000033"
-};
+  shadow: "#00000033",
+  background: "#fff",
+  backgroundSecondary: "#f6eaa5"
+}
 
 const Wrapper = styled.div`
   width: 100%;
@@ -53,57 +58,22 @@ const Wrapper = styled.div`
     border: none;
     border-radius: unset;
   }
-`;
-const Section = styled.section`
-  margin: 1em 0;
-  grid-area: ${p => p.area};
-
-  & > h2 {
-    font-size: 1.2em;
-    padding-left: 0.5em;
-    border-left: 5px solid ${({ theme }) => theme.accent};
-    text-transform: uppercase;
-  }
-
-  ul {
-    margin: 1em;
-    list-style: disc;
-
-    &.no-style {
-      list-style: none;
-    }
-  }
-`;
-const Grid = styled.main`
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-areas: "main sidebar";
-  grid-gap: 1em;
-`;
-const Sidebar = styled.aside`
-  grid-area: "sidebar";
-  padding: 0 0 0 1em;
-  border-left: 1px solid ${p => p.theme.border};
-
-  section:not(:last-child) {
-    border-bottom: 1px solid ${p => p.theme.border};
-  }
-`;
+`
 
 const Resume = ({ meta, experiences, educations, skills, accounts }) => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <Wrapper>
         <Header {...meta} />
-        <Grid>
+        <MainGrid>
           <Section area="main">
             {experiences.map(experience => (
-              <Experience key={experience.title} {...experience} />
+              <ExperienceItem key={experience.title} {...experience} />
             ))}
           </Section>
           <Sidebar>
             <Section>
-              <h2>Skills</h2>
+              <SectionHeading>Skills</SectionHeading>
               <ul>
                 {skills.map(skill => (
                   <li key={skill.title}>{skill.title}</li>
@@ -111,9 +81,9 @@ const Resume = ({ meta, experiences, educations, skills, accounts }) => (
               </ul>
             </Section>
             <Section area="sidebar">
-              <h2>Education</h2>
+              <SectionHeading>Education</SectionHeading>
               {educations.map(education => (
-                <Education key={education.title} {...education} />
+                <EducationItem key={education.title} {...education} />
               ))}
             </Section>
             <Media query="print">
@@ -122,16 +92,7 @@ const Resume = ({ meta, experiences, educations, skills, accounts }) => (
                   <Section area="sidebar">
                     <ul className="no-style">
                       {accounts.map(account => (
-                        <li key={account.url}>
-                          <a
-                            href={account.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {account.icon ? <Icon name={account.icon} /> : null}
-                            {account.title}
-                          </a>
-                        </li>
+                        <AccountItem key={account.url} {...account} />
                       ))}
                     </ul>
                   </Section>
@@ -139,11 +100,11 @@ const Resume = ({ meta, experiences, educations, skills, accounts }) => (
               }
             </Media>
           </Sidebar>
-        </Grid>
+        </MainGrid>
       </Wrapper>
       <Footer />
     </React.Fragment>
   </ThemeProvider>
-);
+)
 
-export default Resume;
+export default Resume

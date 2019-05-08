@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #EAEAEA;
+  background: #f1f7ff;
   font: 16px/1.2 "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -26,14 +26,14 @@ span.emoji {
   vertical-align: text-bottom;
 }
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600');
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600");
 
 @page {
-	margin: 1cm;
+  margin: 1cm;
 }
 
 @media print {
-	body {
-		background: transparent;
-	}
+  body {
+    background: transparent;
+  }
 }

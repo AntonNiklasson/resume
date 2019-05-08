@@ -5,7 +5,7 @@ meta:
     email: niklasson.anton[a]gmail.com
 
 experiences:
-  - title: Frontend Development
+  - title: Fullstack JavaScript
     organization: Creuna
     time:
       from:
@@ -14,6 +14,16 @@ experiences:
       to: null
     description: |
       As a part of multiple different teams I contributed to design systems, frontend architecture, server-rendered React apps and internal tools for governement organizations and large coporations within Finance.
+    tech:
+      - react
+      - node.js
+      - storybook
+      - fractal
+      - styled-components
+      - next.js
+      - server-side rendering
+      - jest
+      - docker-compose
 
   - title: Freelancing
     organization: Anton Niklasson AB
@@ -22,8 +32,6 @@ experiences:
         month: 10
         year: 2018
       to: null
-    description: |
-      Taking on various technical projects as my own boss.
 
   - title: Fullstack JavaScript
     organization: Bonnier News
@@ -36,7 +44,17 @@ experiences:
         year: 2018
     description: |
       Part of the team that built Bonnier News new publishing platform. My contribution included frontend development, backend integrations, design systems, agile work and technical interviews.
-      Our main focus was to replace older tools with a more usable and unobtrusive suite of systems for optimizing the journalism is produced at Bonnier News.
+      
+      Our main focus was to replace older tools with a more usable and unobtrusive suite of systems for optimizing the journalism produced Bonnier News.
+    tech:
+      - react
+      - node.js
+      - emotion
+      - redux
+      - elasticsearch
+      - tdd
+      - docker
+      - webpack
 
   - title: Consultant
     organization: Netlight
@@ -47,20 +65,64 @@ experiences:
       to:
         month: 9
         year: 2018
-    description: |
-      Netlight provides genuine consulting services for leaders in the digital industry. The combination of competence, creativity and business sense is what makes Netlight stand out as a service provider, and are also the characteristics of each individual Netlighter.
 
-  - title: Frontend & Sales Support
+  - title: Frontend Development
+    organization: Accedo
+    time:
+      from:
+        month: 1
+        year: 2017
+      to:
+        month: 6
+        year: 2017
+    description: |
+      Anton was part of a distributed cross-platform team that developed the various applications for MBC Shahid, a huge player in the arabic market.
+    tech:
+      - react
+      - redux
+      - css modules
+      - jest
+
+  - title: Chromecast Development
+    organization: Accedo
+    time:
+      from:
+        month: 8
+        year: 2016
+      to:
+        month: 1
+        year: 2017
+    description: |
+      Part of a cross-platform distributed team that developed a suite of applications for streaming video content. Included server-side rendered React to be able to handle huge amounts of traffic within a short timeframe.
+    tech:
+      - react
+      - redux
+      - server-side rendering
+      - jest
+      - node.js
+      - chromecast
+      - webpack
+
+  - title: React Native Prototyping
     organization: Accedo
     time:
       from:
         month: 2
         year: 2016
       to:
-        month: 6
-        year: 2017
+        month: 8
+        year: 2016
     description: |
-      Part of a cross-platform distributed team that developed a suite of applications for streaming video content. Included server-side rendered React to be able to handle huge amounts of traffic within a short timeframe.
+      As part of a larger suite of white-label products Anton developed a prototype for a video streaming application in React Native.
+      
+      The intention of the project was to figure out how to apply React Native in a larger software organization and pre-existing products.
+      
+    tech:
+      - react
+      - redux
+      - react native
+      - android
+      - ios
 
   - title: Game Development
     organization: Attentec
@@ -72,7 +134,11 @@ experiences:
         month: 9
         year: 2015
     description: |
-      Built a top-down multiplayer racing game for all the majoir mobile phone platforms together with three other students. Availble on iOS, Android and Windows Phone.
+      Developed a realtime multiplayer racing game for Windows Phone, Android, iOS using Lua. The game is played over a local wifi network utilizing UDP sockets, custom built level generation and client-side interpolations.
+    tech:
+      - lua
+      - tdd
+      - sockets
 
   - title: JavaScript Development
     organization: Per & Per
@@ -84,7 +150,17 @@ experiences:
         month: 9
         year: 2014
     description: |
-      Researched and prototyped vector-based maps to be run a browser.
+      Per&Per developed a series of tools and products for helping monitoring, growing, buying and selling land. The work was mainly focused around various data layers, visualization and maps.
+
+      As part of a small team Anton researched and developed prototypes focused on the web-based visualizations.
+    tech:
+      - javascript
+      - protobuf
+      - mocha
+      - gulp
+      - open street map
+      - leaflet
+      - mapbox
 
 educations:
   - title: Ms.C. Information Technology
@@ -105,7 +181,7 @@ skills:
   - title: Scalable CSS
   - title: Agile processes
   - title: Tooling
-  - title: Pairing & mobprogramming
+  - title: Pairing- & mobprogramming
 
 accounts:
   - title: GitHub

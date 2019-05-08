@@ -1,0 +1,6 @@
+export { default as Icon } from "./icon"
+export { default as EducationItem } from "./educationItem"
+export { default as ExperienceItem } from "./experienceItem"
+export { default as Footer } from "./footer"
+export { default as Header } from "./header"
+export { default as AccountItem } from "./accountItem"

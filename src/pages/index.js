@@ -1,16 +1,16 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../layout";
-import Resume from "../components/resume";
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../layout"
+import Resume from "../resume"
 
 export default function App(props) {
-  const data = props.data.allSrcYaml.edges[0].node;
+  const data = props.data.allSrcYaml.edges[0].node
 
   return (
     <Layout {...data.meta}>
       <Resume {...data} />
     </Layout>
-  );
+  )
 }
 
 export const query = graphql`
@@ -36,6 +36,7 @@ export const query = graphql`
               }
             }
             description
+            tech
           }
           educations {
             title
@@ -57,4 +58,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
