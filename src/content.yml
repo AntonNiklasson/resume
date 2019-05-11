@@ -1,6 +1,6 @@
 meta:
-  title: Resume | Anton Niklasson
-  description: Resume of Anton Niklasson
+  title: Anton Niklasson
+  description: Anton Niklasson
   contacts:
     email: niklasson.anton[a]gmail.com
 
@@ -56,7 +56,7 @@ experiences:
       - docker
       - webpack
 
-  - title: Consultant
+  - title: Consulting
     organization: Netlight
     time:
       from:
@@ -103,7 +103,7 @@ experiences:
       - chromecast
       - webpack
 
-  - title: React Native Prototyping
+  - title: React Native
     organization: Accedo
     time:
       from:

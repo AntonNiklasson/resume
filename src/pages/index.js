@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../layout"
-import Resume from "../resume"
+import Layout from "~/layout.js"
+import Resume from "~/resume.js"
 
 export default function App(props) {
   const data = props.data.allSrcYaml.edges[0].node

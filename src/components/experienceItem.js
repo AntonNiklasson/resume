@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Markdown from "react-markdown";
-import { andify } from "../utils";
+import React from "react"
+import styled from "styled-components"
+import Markdown from "react-markdown"
+import { andify } from "../utils"
 
 const Container = styled.div`
   margin: 0 0 2em 0;
@@ -9,7 +9,7 @@ const Container = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
-`;
+`
 const Header = styled.header`
   display: flex;
   flex-direction: column-reverse;
@@ -18,9 +18,9 @@ const Header = styled.header`
   time {
     font-size: 0.8em;
     font-weight: bold;
-    color: ${p => p.theme.textLight};
+    color: ${p => p.theme.textSecondary};
   }
-`;
+`
 const Body = styled.div`
   margin: 0;
   font-size: 0.9em;
@@ -32,12 +32,12 @@ const Body = styled.div`
       margin-bottom: 0;
     }
   }
-`;
+`
 const Tech = styled.div`
   margin: 0.5em 0;
   padding: 0.5em;
-  background: ${p => p.theme.backgroundSecondary};
-  border-radius: 4px;
+  border: 2px solid ${p => p.theme.accent};
+  border-radius: 0.5em;
   font-size: 0.9em;
 
   h3 {
@@ -47,7 +47,7 @@ const Tech = styled.div`
     text-transform: uppercase;
     color: ${p => p.theme.textLight};
   }
-`;
+`
 
 export default function ExperienceItem({
   title,
@@ -77,5 +77,5 @@ export default function ExperienceItem({
         </Tech>
       )}
     </Container>
-  );
+  )
 }

@@ -1,32 +1,31 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const SectionHeading = styled.h3`
   font-size: 1em;
-  padding-left: 0.5em;
-  border-left: 0.3em solid ${({ theme }) => theme.accent};
   text-transform: uppercase;
-`;
+  position: relative;
+`
 
 export const Section = styled.section`
   margin: 0 0 1em 0;
+  padding: 1em;
   grid-area: ${p => p.area};
 
   ul {
-    margin: 1em;
-    list-style: disc;
+    margin: 0.5em 0;
 
     &.no-style {
       list-style: none;
     }
   }
-`;
+`
 
 export const MainGrid = styled.main`
   display: grid;
   grid-template-columns: 4fr 2fr;
   grid-template-areas: "main sidebar";
   grid-gap: 1em;
-`;
+`
 
 export const Sidebar = styled.aside`
   grid-area: "sidebar";
@@ -36,4 +35,4 @@ export const Sidebar = styled.aside`
   section:not(:last-child) {
     border-bottom: 1px solid ${p => p.theme.border};
   }
-`;
+`
