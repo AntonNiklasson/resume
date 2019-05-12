@@ -15,6 +15,11 @@ export const MainGrid = styled.main`
   grid-template-columns: 4fr 2fr;
   grid-template-areas: "main sidebar";
   grid-gap: 1em;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "sidebar";
+  }
 `
 
 export const Sidebar = styled.aside`
