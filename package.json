@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "prod:build": "gatsby build",
-    "prod:serve": "http-server /app/public",
+    "prod:serve": "http-server -p 80 -g /app/public",
     "deploy": "./scripts/deploy.js"
   },
   "dependencies": {
