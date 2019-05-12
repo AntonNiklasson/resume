@@ -19,7 +19,13 @@ const Styles = createGlobalStyle`
 	}
 
 	ul {
-		list-style: square;
+		margin: 1em 0 1em 1em;
+		list-style: square outside;
+
+		&.no-style {
+			margin: 1em 0;
+			list-style-type: none;
+		}
 	}
 `
 

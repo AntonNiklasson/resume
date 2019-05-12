@@ -3,21 +3,11 @@ import styled from "styled-components"
 export const SectionHeading = styled.h3`
   font-size: 1em;
   text-transform: uppercase;
-  position: relative;
 `
 
 export const Section = styled.section`
   margin: 0 0 1em 0;
-  padding: 1em;
   grid-area: ${p => p.area};
-
-  ul {
-    margin: 0.5em 0;
-
-    &.no-style {
-      list-style: none;
-    }
-  }
 `
 
 export const MainGrid = styled.main`
@@ -29,7 +19,7 @@ export const MainGrid = styled.main`
 
 export const Sidebar = styled.aside`
   grid-area: "sidebar";
-  padding: 0 0 0 1em;
+  padding: 1em 2em;
   border-left: 1px solid ${p => p.theme.border};
 
   section:not(:last-child) {
