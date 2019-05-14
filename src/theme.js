@@ -4,7 +4,7 @@ const theme = {
   text: "#333333",
   textSecondary: "#666666",
   border: "#DDDDDD",
-  accent: "#d41995"
+  accent: "#d46eb1"
 }
 
 export default theme

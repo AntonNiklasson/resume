@@ -10,6 +10,10 @@ const Editor = styled.div`
   flex-flow: row wrap;
   align-items: center;
   background: #eee;
+
+  @media print {
+    display: none;
+  }
 `
 const Field = styled.div`
   margin: 0.5em;
@@ -60,7 +64,7 @@ export default function ThemeEditor({ theme: initialTheme, children }) {
                     defaultValue={field.value}
                     onChange={onValueChange(field.label)}
                   />
-                  <input type="text" value={field.value} readonly />
+                  <input type="text" value={field.value} readOnly />
                 </div>
               </Field>
             ))}

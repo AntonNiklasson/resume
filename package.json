@@ -6,7 +6,13 @@
     "dev": "gatsby develop",
     "prod:build": "gatsby build",
     "prod:serve": "http-server -p 80 -g /app/public",
-    "deploy": "./scripts/deploy.js"
+    "deploy": "./scripts/deploy.js",
+    "pdf": "./scripts/pdf.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn pdf && git add static/anton.pdf"
+    }
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
@@ -19,6 +25,7 @@
     "gatsby-transformer-yaml": "^2.1.8",
     "http-server": "^0.11.1",
     "lodash": "^4.17.11",
+    "puppeteer": "^1.15.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
@@ -26,5 +33,8 @@
     "react-media": "^1.9.2",
     "ssh-exec": "^2.0.0",
     "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "husky": "^2.2.0"
   }
 }

@@ -27,6 +27,12 @@ const Styles = createGlobalStyle`
 			list-style-type: none;
 		}
 	}
+
+	@page {
+		size: auto;
+		margin: 0mm;
+		padding: 10em;
+	}
 `
 
 export default Styles

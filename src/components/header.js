@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 const Container = styled.header`
   display: flex;
@@ -17,12 +17,15 @@ const Container = styled.header`
     flex-direction: column;
     align-items: center;
   }
-`;
+`
 
 export default function Header({ title }) {
   return (
     <Container>
       <h1>{title}</h1>
+      <a href="anton.pdf" target="_blank">
+        Download pdf
+      </a>
     </Container>
-  );
+  )
 }

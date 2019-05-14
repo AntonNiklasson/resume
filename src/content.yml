@@ -177,8 +177,7 @@ educations:
 
 skills:
   - title: JavaScript
-  - title: Design-systems
-  - title: Scalable CSS
+  - title: Design systems
   - title: Agile processes
   - title: Tooling
   - title: Pairing- & mobprogramming
