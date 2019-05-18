@@ -16,7 +16,7 @@ export const MainGrid = styled.main`
   grid-template-areas: "main sidebar";
   grid-gap: 1em;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 750px) {
     grid-template-columns: 1fr;
     grid-template-areas: "main" "sidebar";
   }

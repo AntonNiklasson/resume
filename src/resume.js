@@ -31,6 +31,8 @@ const Wrapper = styled.div`
   }
 
   @media print {
+    background: red;
+
     margin: 0 auto;
     padding: 0;
     border: none;

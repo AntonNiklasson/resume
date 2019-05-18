@@ -13,7 +13,7 @@ experiences:
         year: 2018
       to: null
     description: |
-      As a part of multiple different teams I contributed to design systems, frontend architecture, server-rendered React apps and internal tools for governement organizations and large coporations within Finance.
+      As a part of multiple different teams I contributed to design systems, frontend architecture, server-rendered React apps, API-integrations, and internal tools for governement organizations and larger coporations.
     tech:
       - react
       - node.js
@@ -76,7 +76,9 @@ experiences:
         month: 6
         year: 2017
     description: |
-      Anton was part of a distributed cross-platform team that developed the various applications for MBC Shahid, a huge player in the arabic market.
+      Anton was part of a distributed cross-platform team that developed the various applications for MBC Shahid, a huge player within the arabic media market.
+
+      The main challenges included making concious decisions on the frontend to adapt to their massive scale, while at the same time delivering a modern and feature-rich platform.
     tech:
       - react
       - redux
@@ -93,7 +95,7 @@ experiences:
         month: 1
         year: 2017
     description: |
-      Part of a cross-platform distributed team that developed a suite of applications for streaming video content. Included server-side rendered React to be able to handle huge amounts of traffic within a short timeframe.
+      Developed a Chromecast receiver application from scratch with the main goal of being as quick and responsive as possible. Many of the popular streaming platforms suffered from longer startup times on teh Chromecast. The technical solutional was successful due to offloading the client with a server-rendered React application in combination with a aggressive response caching strategy.
     tech:
       - react
       - redux
