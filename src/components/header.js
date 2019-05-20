@@ -4,20 +4,16 @@ import { DownloadButton } from "./downloadButton"
 
 const Container = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 0 0 1em 0;
   padding: 0 0 0.5em 0;
   border-bottom: 1px solid ${p => p.theme.border};
 
   h1 {
+    flex: 1;
     font-size: 2em;
     white-space: nowrap;
-  }
-
-  @media (max-width: 16cm) {
-    flex-direction: column;
-    align-items: center;
   }
 `
 

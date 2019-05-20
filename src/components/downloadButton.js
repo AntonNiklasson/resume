@@ -5,6 +5,10 @@ const Link = styled.a`
   background: ${p => p.theme.background};
   color: ${p => p.theme.text};
 
+  @media print {
+    display: none;
+  }
+
   &:hover {
     color: ${p => p.theme.accent};
   }

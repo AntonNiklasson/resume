@@ -1,6 +1,6 @@
 const theme = {
   background: "#ffffff",
-  backgroundSecondary: "#CCCCCC",
+  backgroundSecondary: "#eeeeee",
   text: "#333333",
   textSecondary: "#666666",
   border: "#DDDDDD",

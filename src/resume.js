@@ -30,20 +30,6 @@ const Wrapper = styled.div`
     }
   }
 
-  @media print {
-    background: red;
-
-    margin: 0 auto;
-    padding: 0;
-    border: none;
-    box-shadow: none;
-
-    a {
-      font-weight: normal;
-      text-decoration: none;
-    }
-  }
-
   @media (max-width: 21cm) {
     margin: 0;
     border: none;

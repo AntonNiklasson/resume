@@ -4,7 +4,8 @@ import Markdown from "react-markdown"
 import { andify } from "../utils"
 
 const Container = styled.div`
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
+  page-break-inside: avoid;
 
   &:last-child {
     margin-bottom: 0;
@@ -12,18 +13,18 @@ const Container = styled.div`
 `
 const Header = styled.header`
   display: flex;
-  flex-direction: column-reverse;
-  font-size: 1.1em;
+  flex-direction: column;
 
+  h4,
   time {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
     color: ${p => p.theme.textSecondary};
   }
 `
 const Body = styled.div`
-  margin: 0;
-  font-size: 0.9em;
+  margin: 0.5em 0;
+  font-size: 12px;
 
   p {
     margin: 0 0 1em 0;
@@ -36,9 +37,8 @@ const Body = styled.div`
 const Tech = styled.div`
   margin: 0.5em 0;
   padding: 0.5em;
-  border: 2px solid ${p => p.theme.accent};
-  border-radius: 0.5em;
   font-size: 0.9em;
+  border: 2px solid ${p => p.theme.backgroundSecondary};
 
   h3 {
     display: inline;
@@ -59,13 +59,14 @@ export default function ExperienceItem({
   return (
     <Container>
       <Header>
-        <h3>
-          {title} at {organization}
-        </h3>
-        <time>
-          {time.from.month}.{time.from.year}
-          {time.to ? ` - ${time.to.month}.${time.to.year}` : " -"}
-        </time>
+        <h3>{title}</h3>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <h4>at {organization}</h4>
+          <time>
+            {time.from.month}.{time.from.year}
+            {time.to ? ` - ${time.to.month}.${time.to.year}` : " -"}
+          </time>
+        </div>
       </Header>
       <Body>
         <Markdown source={description} />

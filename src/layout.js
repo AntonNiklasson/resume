@@ -1,20 +1,17 @@
 import React from "react"
 import Helmet from "react-helmet"
 import styled, { ThemeProvider } from "styled-components"
-import { ThemeEditor } from "~/components"
 import theme from "./theme.js"
 import GlobalStyles from "./globalStyles.js"
+//import { ThemeEditor } from "~/components"
 
 const LayoutContainer = styled.div`
   margin: 1em 0;
 `
 
 export default function Layout(props) {
-  const ThemeWrapper =
-    process.env.NODE_ENV === "production" ? ThemeProvider : ThemeEditor
-
   return (
-    <ThemeWrapper theme={theme}>
+    <ThemeProvider theme={theme}>
       <LayoutContainer>
         <GlobalStyles />
         <Helmet>
@@ -22,6 +19,6 @@ export default function Layout(props) {
         </Helmet>
         {props.children}
       </LayoutContainer>
-    </ThemeWrapper>
+    </ThemeProvider>
   )
 }

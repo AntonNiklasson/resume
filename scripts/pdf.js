@@ -3,10 +3,10 @@
 const puppeteer = require("puppeteer")
 
 const run = async () => {
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({ headless: true })
   const page = await browser.newPage()
 
-  await page.goto("http://cv.antn.se", { waitUntil: "networkidle0" })
+  await page.goto("http://localhost:8000", { waitUntil: "networkidle2" })
   await page.pdf({ path: "static/anton.pdf", format: "A4" })
 
   await browser.close()

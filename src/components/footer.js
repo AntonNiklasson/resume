@@ -8,7 +8,7 @@ const Container = styled.footer`
   font-size: 0.7em;
 
   @media print {
-    background: red;
+    display: none;
   }
 
   a {

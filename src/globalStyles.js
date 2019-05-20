@@ -8,9 +8,14 @@ const Styles = createGlobalStyle`
 	}
 
 	body {
-		padding: 1em 0;
+		margin: 1em;
+		padding: 0;
 		background: ${p => p.theme.background};
 		font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+		@media print {
+			margin: 2cm;
+		}
 	}
 
 	h1,h2,h3,h4,h5,h6 {
@@ -30,8 +35,7 @@ const Styles = createGlobalStyle`
 
 	@page {
 		size: auto;
-		margin: 0mm;
-		padding: 10em;
+		margin: 0cm;
 	}
 `
 

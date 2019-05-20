@@ -5,21 +5,17 @@ export const SectionHeading = styled.h3`
   text-transform: uppercase;
 `
 
+export const MainGrid = styled.main`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "main sidebar";
+  grid-gap: 1em;
+`
+
 export const Section = styled.section`
   margin: 0 0 1em 0;
   grid-area: ${p => p.area};
-`
-
-export const MainGrid = styled.main`
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-template-areas: "main sidebar";
-  grid-gap: 1em;
-
-  @media (max-width: 750px) {
-    grid-template-columns: 1fr;
-    grid-template-areas: "main" "sidebar";
-  }
+  page-break-inside: avoid;
 `
 
 export const Sidebar = styled.aside`
