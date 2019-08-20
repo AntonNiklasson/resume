@@ -14,10 +14,8 @@ const script = `
 	git fetch origin;
 	git reset --hard origin/${branch};
 
-	docker build -t resume .;
-	docker stop resume-container || true;
-	docker rm resume-container || true;
-	docker run --rm -d -p 8001:80 --name resume-container resume;
+	yarn
+	yarn prod:build
 `
 
 ;(async () => {
