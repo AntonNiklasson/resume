@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { DownloadButton } from "./downloadButton"
 
 const Container = styled.header`
   display: flex;
@@ -21,7 +20,6 @@ export default function Header({ title }) {
   return (
     <Container>
       <h1>{title}</h1>
-      <DownloadButton file="anton.pdf">Download pdf</DownloadButton>
     </Container>
   )
 }
