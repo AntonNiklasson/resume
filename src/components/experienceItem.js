@@ -4,7 +4,7 @@ import Markdown from "react-markdown"
 import { andify } from "../utils"
 
 const Container = styled.div`
-  margin: 0 0 1em 0;
+  margin: 0 0 1.5em 0;
   page-break-inside: avoid;
 
   &:last-child {
@@ -17,14 +17,13 @@ const Header = styled.header`
 
   h4,
   time {
-    font-size: 0.9em;
     font-weight: bold;
     color: ${p => p.theme.textSecondary};
   }
 `
 const Body = styled.div`
   margin: 0.5em 0;
-  font-size: 12px;
+  font-size: 0.875rem;
 
   p {
     margin: 0 0 1em 0;
@@ -35,10 +34,10 @@ const Body = styled.div`
   }
 `
 const Tech = styled.div`
-  margin: 0.5em 0;
+  margin: 1em;
   padding: 0.5em;
   font-size: 0.9em;
-  border: 2px solid ${p => p.theme.backgroundSecondary};
+  border-left: 3px solid ${p => p.theme.border};
 
   h3 {
     display: inline;
@@ -61,7 +60,7 @@ export default function ExperienceItem({
       <Header>
         <h3>{title}</h3>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <h4>at {organization}</h4>
+          <h4>{organization}</h4>
           <time>
             {time.from.month}.{time.from.year}
             {time.to ? ` - ${time.to.month}.${time.to.year}` : " -"}

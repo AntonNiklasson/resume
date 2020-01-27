@@ -1,17 +1,37 @@
 meta:
   title: Anton Niklasson
-  description: Anton Niklasson
+  description: Freelancing Software Developer
   contacts:
     email: niklasson.anton[a]gmail.com
 
 experiences:
+  - title: Fullstack JavaScript
+    organization: Klarna
+    time:
+      from:
+        month: 06
+        year: 2019
+      to: null
+    tech:
+      - react
+      - react native
+      - storybook
+      - node.js
+      - sequelize
+      - postgres
+      - jest
+      - visual regression testing
+      - docker-compose
+
   - title: Fullstack JavaScript
     organization: Creuna
     time:
       from:
         month: 10
         year: 2018
-      to: null
+      to:
+        month: 06
+        year: 2019
     description: |
       As a part of multiple different teams I contributed to design systems, frontend architecture, server-rendered React apps, API-integrations, and internal tools for governement organizations and larger coporations.
     tech:
@@ -197,3 +217,5 @@ accounts:
   - title: StackOverflow
     url: https://stackoverflow.com/users/1245042/antonniklasson
     icon: stackoverflow
+  - title: Keybase
+    url: https://google.com

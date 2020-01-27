@@ -1,13 +1,11 @@
-import React from "react"
+import React, { Fragment } from "react"
 import styled from "styled-components"
 import Media from "react-media"
 import {
-  Footer,
   Header,
   EducationItem,
   ExperienceItem,
   AccountItem,
-  MainGrid,
   Section,
   SectionHeading,
   Sidebar
@@ -36,50 +34,60 @@ const Wrapper = styled.div`
     border-radius: unset;
   }
 `
+const ContentLayout = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+`
 
-const Resume = ({ meta, experiences, educations, skills, accounts }) => (
-  <React.Fragment>
-    <Wrapper>
-      <Header {...meta} />
-      <MainGrid>
-        <Section area="main">
-          {experiences.map(experience => (
-            <ExperienceItem key={experience} {...experience} />
-          ))}
-        </Section>
-        <Sidebar>
-          <Section>
-            <SectionHeading>Skills</SectionHeading>
-            <ul>
-              {skills.map(skill => (
-                <li key={skill.title}>{skill.title}</li>
-              ))}
-            </ul>
-          </Section>
-          <Section area="sidebar">
-            <SectionHeading>Education</SectionHeading>
-            {educations.map(education => (
-              <EducationItem key={education.title} {...education} />
+export default function Resume({
+  meta,
+  experiences,
+  educations,
+  skills,
+  accounts
+}) {
+  return (
+    <Fragment>
+      <Wrapper>
+        <Header {...meta} />
+        <ContentLayout>
+          <Section area="main">
+            {experiences.map(experience => (
+              <ExperienceItem key={experience} {...experience} />
             ))}
           </Section>
-          <Media query="print">
-            {matches =>
-              !matches ? (
-                <Section area="sidebar">
-                  <ul className="no-style">
-                    {accounts.map(account => (
-                      <AccountItem key={account.url} {...account} />
-                    ))}
-                  </ul>
-                </Section>
-              ) : null
-            }
-          </Media>
-        </Sidebar>
-      </MainGrid>
-    </Wrapper>
-    <Footer />
-  </React.Fragment>
-)
-
-export default Resume
+          <Sidebar>
+            <Section>
+              <SectionHeading>Skills</SectionHeading>
+              <ul>
+                {skills.map(skill => (
+                  <li key={skill.title}>{skill.title}</li>
+                ))}
+              </ul>
+            </Section>
+            <Section area="sidebar">
+              <SectionHeading>Education</SectionHeading>
+              {educations.map(education => (
+                <EducationItem key={education.title} {...education} />
+              ))}
+            </Section>
+            <Media query="print">
+              {matches =>
+                !matches ? (
+                  <Section area="sidebar">
+                    <SectionHeading>Links</SectionHeading>
+                    <ul className="no-style">
+                      {accounts.map(account => (
+                        <AccountItem key={account.url} {...account} />
+                      ))}
+                    </ul>
+                  </Section>
+                ) : null
+              }
+            </Media>
+          </Sidebar>
+        </ContentLayout>
+      </Wrapper>
+    </Fragment>
+  )
+}

@@ -11,7 +11,7 @@ const Styles = createGlobalStyle`
 		margin: 1em;
 		padding: 0;
 		background: ${p => p.theme.background};
-		font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font: 18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 		@media print {
 			margin: 2cm;

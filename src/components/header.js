@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.header`
   display: flex;
-  justify-content: flex-start;
+  flex-flow: row wrap;
   align-items: center;
   margin: 0 0 1em 0;
   padding: 0 0 0.5em 0;
@@ -14,12 +14,17 @@ const Container = styled.header`
     font-size: 2em;
     white-space: nowrap;
   }
+
+  h2 {
+    font-size: 1.2em;
+  }
 `
 
-export default function Header({ title }) {
+export default function Header({ title, description }) {
   return (
     <Container>
       <h1>{title}</h1>
+      <h2>{description}</h2>
     </Container>
   )
 }

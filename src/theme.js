@@ -3,7 +3,7 @@ const theme = {
   backgroundSecondary: "#eeeeee",
   text: "#333333",
   textSecondary: "#666666",
-  border: "#DDDDDD",
+  border: "#EEE",
   accent: "#d46eb1"
 }
 

@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import styled, { ThemeProvider } from "styled-components"
 import theme from "./theme.js"
 import GlobalStyles from "./globalStyles.js"
-//import { ThemeEditor } from "~/components"
+import { Footer } from "~/components"
 
 const LayoutContainer = styled.div`
   margin: 1em 0;
@@ -18,6 +18,7 @@ export default function Layout(props) {
           <title>{props.title}</title>
         </Helmet>
         {props.children}
+        <Footer />
       </LayoutContainer>
     </ThemeProvider>
   )
