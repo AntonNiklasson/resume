@@ -25,6 +25,7 @@ export const query = graphql`
           experiences {
             title
             organization
+            logo
             time {
               from {
                 month

@@ -12,13 +12,14 @@ const Container = styled.div`
   }
 `
 const Header = styled.header`
-  display: flex;
-  flex-direction: column;
-
   h4,
   time {
     font-weight: bold;
     color: ${p => p.theme.textSecondary};
+  }
+
+  img {
+    height: 2.5em;
   }
 `
 const Body = styled.div`
@@ -52,6 +53,7 @@ export default function ExperienceItem({
   title,
   organization,
   time,
+  logo,
   description,
   tech
 }) {
@@ -66,6 +68,7 @@ export default function ExperienceItem({
             {time.to ? ` - ${time.to.month}.${time.to.year}` : " -"}
           </time>
         </div>
+        {logo && <img src={require(`../logos/${logo}`)} />}
       </Header>
       <Body>
         <Markdown source={description} />
