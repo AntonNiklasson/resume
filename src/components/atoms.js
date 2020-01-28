@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const SectionHeading = styled.h3`
   font-size: 1em;
-  text-transform: uppercase;
 `
 
 export const MainGrid = styled.main`

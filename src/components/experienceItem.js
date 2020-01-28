@@ -12,6 +12,10 @@ const Container = styled.div`
   }
 `
 const Header = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   h4,
   time {
     font-weight: bold;
@@ -19,7 +23,9 @@ const Header = styled.header`
   }
 
   img {
-    height: 2.5em;
+    margin: 0 0 0 0.5em;
+    height: 2em;
+    border-radius: 0.2em;
   }
 `
 const Body = styled.div`
@@ -60,15 +66,22 @@ export default function ExperienceItem({
   return (
     <Container>
       <Header>
-        <h3>{title}</h3>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <h4>{organization}</h4>
+        <div>
+          <h3>{title}</h3>
           <time>
             {time.from.month}.{time.from.year}
             {time.to ? ` - ${time.to.month}.${time.to.year}` : " -"}
           </time>
         </div>
-        {logo && <img src={require(`../logos/${logo}`)} />}
+        <div
+          css={`
+            display: flex;
+            align-items: center;
+          `}
+        >
+          <h4>{organization}</h4>
+          {logo && <img src={require(`../logos/${logo}`)} />}
+        </div>
       </Header>
       <Body>
         <Markdown source={description} />

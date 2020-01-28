@@ -46,14 +46,6 @@ experiences:
       - jest
       - docker-compose
 
-  - title: Freelancing
-    organization: Anton Niklasson AB
-    time:
-      from:
-        month: 10
-        year: 2018
-      to: null
-
   - title: Fullstack JavaScript
     organization: Bonnier News
     time:
@@ -65,7 +57,7 @@ experiences:
         year: 2018
     description: |
       Part of the team that built Bonnier News new publishing platform. My contribution included frontend development, backend integrations, design systems, agile work and technical interviews.
-      
+
       Our main focus was to replace older tools with a more usable and unobtrusive suite of systems for optimizing the journalism produced Bonnier News.
     tech:
       - react
@@ -137,9 +129,9 @@ experiences:
         year: 2016
     description: |
       As part of a larger suite of white-label products Anton developed a prototype for a video streaming application in React Native.
-      
+
       The intention of the project was to figure out how to apply React Native in a larger software organization and pre-existing products.
-      
+
     tech:
       - react
       - redux

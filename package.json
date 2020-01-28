@@ -12,6 +12,7 @@
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.1.11",
     "gatsby-plugin-react-helmet": "^3.0.7",
     "gatsby-plugin-react-svg": "^2.1.0",
