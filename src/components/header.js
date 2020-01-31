@@ -20,11 +20,10 @@ const Container = styled.header`
   }
 `
 
-export default function Header({ title, description }) {
+export default function Header({ title }) {
   return (
     <Container>
       <h1>{title}</h1>
-      <h2>{description}</h2>
     </Container>
   )
 }

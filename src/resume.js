@@ -20,7 +20,6 @@ const Wrapper = styled.div`
   color: ${p => p.theme.text};
 
   a {
-    font-weight: bold;
     text-decoration: underline;
     color: ${p => p.theme.text};
     &:hover {

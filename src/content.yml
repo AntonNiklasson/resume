@@ -13,6 +13,8 @@ experiences:
         month: 06
         year: 2019
       to: null
+    description: |
+      Klarna is on a mission to make any payments and banking in general a joy to use.
     tech:
       - react
       - react native
@@ -24,8 +26,9 @@ experiences:
       - visual regression testing
       - docker-compose
 
-  - title: Fullstack JavaScript
+  - title: Frontend Development
     organization: Creuna
+    logo: creuna.png
     time:
       from:
         month: 10
@@ -48,6 +51,7 @@ experiences:
 
   - title: Fullstack JavaScript
     organization: Bonnier News
+    logo: bonniernews.png
     time:
       from:
         month: 6
@@ -71,6 +75,7 @@ experiences:
 
   - title: Consulting
     organization: Netlight
+    logo: netlight.png
     time:
       from:
         month: 6
@@ -81,6 +86,7 @@ experiences:
 
   - title: Frontend Development
     organization: Accedo
+    logo: accedo.png
     time:
       from:
         month: 1
@@ -100,6 +106,7 @@ experiences:
 
   - title: Chromecast Development
     organization: Accedo
+    logo: accedo.png
     time:
       from:
         month: 8
@@ -120,6 +127,7 @@ experiences:
 
   - title: React Native
     organization: Accedo
+    logo: accedo.png
     time:
       from:
         month: 2
@@ -141,6 +149,7 @@ experiences:
 
   - title: Game Development
     organization: Attentec
+    logo: attentec.jpg
     time:
       from:
         month: 6
@@ -157,6 +166,7 @@ experiences:
 
   - title: JavaScript Development
     organization: Per & Per
+    logo: 2xper.png
     time:
       from:
         month: 6
@@ -200,15 +210,11 @@ skills:
 accounts:
   - title: GitHub
     url: https://github.com/AntonNiklasson
-    icon: github
   - title: LinkedIn
     url: https://www.linkedin.com/in/antonniklasson/
-    icon: linkedin
   - title: Twitter
     url: https://www.twitter.com/AntonNiklasson
-    icon: twitter
   - title: StackOverflow
     url: https://stackoverflow.com/users/1245042/antonniklasson
-    icon: stackoverflow
   - title: Keybase
     url: https://google.com

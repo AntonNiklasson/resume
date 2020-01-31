@@ -11,7 +11,7 @@ const Styles = createGlobalStyle`
 		margin: 1em;
 		padding: 0;
 		background: ${p => p.theme.background};
-		font: 18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 		@media print {
 			margin: 2cm;
@@ -30,6 +30,10 @@ const Styles = createGlobalStyle`
 		&.no-style {
 			margin: 1em 0;
 			list-style-type: none;
+		}
+
+		li {
+			margin: .3em 0;
 		}
 	}
 
