@@ -9,7 +9,7 @@ import {
   Section,
   SectionHeading,
   Sidebar
-} from "~/components"
+} from "../components"
 
 const Wrapper = styled.div`
   width: 100%;
@@ -38,13 +38,7 @@ const ContentLayout = styled.div`
   flex-flow: row nowrap;
 `
 
-export default function Resume({
-  meta,
-  experiences,
-  educations,
-  skills,
-  accounts
-}) {
+export function Resume({ meta, experiences, educations, skills, accounts }) {
   return (
     <Fragment>
       <Wrapper>

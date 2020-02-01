@@ -1,8 +1,6 @@
 meta:
   title: Anton Niklasson
   description: Freelancing Software Developer
-  contacts:
-    email: niklasson.anton[a]gmail.com
 
 experiences:
   - title: Fullstack JavaScript
@@ -14,7 +12,9 @@ experiences:
         year: 2019
       to: null
     description: |
-      Klarna is on a mission to make any payments and banking in general a joy to use.
+      Klarna is on a mission to make any payments and banking in general a joy to use. I have been contributing to their work on personal finance management, and now as part of the work on make shopping online smoother.
+
+      My role includes frontend development for React Native and web, backend development with Node.js, database design in PostgresQL and integrating with Kafka queue systems.
     tech:
       - react
       - react native
@@ -95,7 +95,7 @@ experiences:
         month: 6
         year: 2017
     description: |
-      Anton was part of a distributed cross-platform team that developed the various applications for MBC Shahid, a huge player within the arabic media market.
+      I was part of a distributed cross-platform team that developed the various applications for MBC Shahid, a huge player within the arabic media market.
 
       The main challenges included making concious decisions on the frontend to adapt to their massive scale, while at the same time delivering a modern and feature-rich platform.
     tech:
@@ -136,10 +136,9 @@ experiences:
         month: 8
         year: 2016
     description: |
-      As part of a larger suite of white-label products Anton developed a prototype for a video streaming application in React Native.
+      As part of a larger suite of white-label products I contributed to the development of a prototype for a video streaming application in React Native.
 
       The intention of the project was to figure out how to apply React Native in a larger software organization and pre-existing products.
-
     tech:
       - react
       - redux
@@ -177,7 +176,7 @@ experiences:
     description: |
       Per&Per developed a series of tools and products for helping monitoring, growing, buying and selling land. The work was mainly focused around various data layers, visualization and maps.
 
-      As part of a small team Anton researched and developed prototypes focused on the web-based visualizations.
+      I was doing research and developed prototypes focused on a web-based visualizations.
     tech:
       - javascript
       - protobuf

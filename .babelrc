@@ -9,15 +9,5 @@
       }
     ]
   ],
-  "plugins": [
-    "styled-components",
-    [
-      "module-resolver",
-      {
-        "alias": {
-          "~": "./src"
-        }
-      }
-    ]
-  ]
+  "plugins": ["styled-components"]
 }

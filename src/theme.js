@@ -1,4 +1,4 @@
-const theme = {
+export const lightTheme = {
   background: "#ffffff",
   backgroundSecondary: "#eeeeee",
   text: "#333333",
@@ -6,5 +6,3 @@ const theme = {
   border: "#EEE",
   accent: "#d46eb1"
 }
-
-export default theme

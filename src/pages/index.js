@@ -1,15 +1,23 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "~/layout.js"
-import Resume from "~/resume.js"
+import { ThemeProvider } from "styled-components"
+import Helmet from "react-helmet"
+import { lightTheme } from "../theme.js"
+import { GlobalStyles } from "../globalStyles.js"
+import { Footer, Resume } from "../components"
 
-export default function App(props) {
-  const data = props.data.allSrcYaml.edges[0].node
+export default function App({ data }) {
+  const content = data.allSrcYaml.edges[0].node
 
   return (
-    <Layout {...data.meta}>
-      <Resume {...data} />
-    </Layout>
+    <ThemeProvider theme={lightTheme}>
+      <GlobalStyles />
+      <Helmet>
+        <title>{content.title}</title>
+      </Helmet>
+      <Resume {...content} />
+      <Footer />
+    </ThemeProvider>
   )
 }
 
@@ -53,7 +61,6 @@ export const query = graphql`
           accounts {
             title
             url
-            icon
           }
         }
       }
