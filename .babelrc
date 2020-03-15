@@ -9,5 +9,14 @@
       }
     ]
   ],
-  "plugins": ["styled-components"]
+  "plugins": [
+    "styled-components",
+    [
+      "import-globals",
+      {
+        "React": "react",
+        "styled": "styled-components"
+      }
+    ]
+  ]
 }

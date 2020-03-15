@@ -1,7 +1,5 @@
-import React from "react"
-import styled from "styled-components"
 import Markdown from "react-markdown"
-import { andify } from "../utils"
+import { formatExperienceTime, andify } from "../utils"
 
 const Container = styled.div`
   margin: 0 0 1.5em 0;
@@ -9,35 +7,6 @@ const Container = styled.div`
 
   &:last-child {
     margin-bottom: 0;
-  }
-`
-const Header = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  h4,
-  time {
-    font-weight: bold;
-    color: ${p => p.theme.textSecondary};
-  }
-
-  img {
-    margin: 0 0 0 0.5em;
-    height: 2em;
-    border-radius: 0.2em;
-  }
-`
-const Body = styled.div`
-  margin: 0.5em 0;
-  font-size: 0.875rem;
-
-  p {
-    margin: 0 0 1em 0;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 `
 const Tech = styled.div`
@@ -65,14 +34,27 @@ export default function ExperienceItem({
 }) {
   return (
     <Container>
-      <Header>
-        <div>
-          <h3>{title}</h3>
-          <time>
-            {time.from.month}.{time.from.year}
-            {time.to ? ` - ${time.to.month}.${time.to.year}` : " -"}
-          </time>
-        </div>
+      <header
+        css={`
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-between;
+
+          time {
+            font-weight: bold;
+            font-size: 0.8em;
+            color: ${p => p.theme.textSecondary};
+          }
+
+          img {
+            margin: 0 0 0 0.5em;
+            height: 1em;
+            border-radius: 0.2em;
+          }
+        `}
+      >
+        <h4>{title}</h4>
+        <time>{formatExperienceTime(time)}</time>
         <div
           css={`
             display: flex;
@@ -82,10 +64,23 @@ export default function ExperienceItem({
           <h4>{organization}</h4>
           {logo && <img src={require(`../logos/${logo}`)} />}
         </div>
-      </Header>
-      <Body>
+      </header>
+      <div
+        css={`
+          margin: 0.5em 0;
+          font-size: 0.875rem;
+
+          p {
+            margin: 0 0 1em 0;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        `}
+      >
         <Markdown source={description} />
-      </Body>
+      </div>
       {tech && (
         <Tech>
           <h3>Tech: </h3>

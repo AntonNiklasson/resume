@@ -1,13 +1,37 @@
-import React from "react"
 import { graphql } from "gatsby"
 import { ThemeProvider } from "styled-components"
 import Helmet from "react-helmet"
 import { lightTheme } from "../theme.js"
 import { GlobalStyles } from "../globalStyles.js"
-import { Footer, Resume } from "../components"
+import { Header, Footer, Resume } from "../components"
+
+const Wrapper = styled.div`
+  width: 100%;
+  max-width: 21cm;
+  margin: 1em auto;
+  padding: 1em;
+  background: ${p => p.theme.white};
+  color: ${p => p.theme.text};
+
+  a {
+    text-decoration: underline;
+    color: ${p => p.theme.text};
+    &:hover {
+      color: ${p => p.theme.accent};
+    }
+  }
+
+  @media (max-width: 21cm) {
+    margin: 0;
+    border: none;
+    border-radius: unset;
+  }
+`
 
 export default function App({ data }) {
   const content = data.allSrcYaml.edges[0].node
+
+  console.log(content)
 
   return (
     <ThemeProvider theme={lightTheme}>
@@ -15,8 +39,11 @@ export default function App({ data }) {
       <Helmet>
         <title>{content.title}</title>
       </Helmet>
-      <Resume {...content} />
-      <Footer />
+      <Wrapper>
+        <Header {...content.meta} />
+        <Resume {...content} />
+        <Footer />
+      </Wrapper>
     </ThemeProvider>
   )
 }

@@ -1,6 +1,3 @@
-import React from "react"
-import styled from "styled-components"
-
 const Item = styled.div`
   margin: 1em 0;
   font-size: 14px;
