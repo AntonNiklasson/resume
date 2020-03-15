@@ -8,8 +8,6 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	body {
-		margin: 1em;
-		padding: 0;
 		background: ${p => p.theme.background};
 		font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 

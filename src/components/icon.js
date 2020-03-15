@@ -1,5 +1,3 @@
-import React from "react";
-import styled from "styled-components";
 import Github from "../icons/github.svg";
 import Linkedin from "../icons/linkedin.svg";
 import Twitter from "../icons/twitter.svg";

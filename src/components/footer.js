@@ -1,6 +1,3 @@
-import React from "react"
-import styled from "styled-components"
-
 const Container = styled.footer`
   padding: 1em 0 2em 0;
   text-align: center;

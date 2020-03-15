@@ -17,5 +17,9 @@
     "react": {
       "version": "detect"
     }
+  },
+  "globals": {
+    "React": true,
+    "styled": true
   }
 }

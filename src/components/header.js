@@ -1,6 +1,3 @@
-import React from "react"
-import styled from "styled-components"
-
 const Container = styled.header`
   display: flex;
   flex-flow: row wrap;
@@ -20,7 +17,7 @@ const Container = styled.header`
   }
 `
 
-export default function Header({ title }) {
+export function Header({ title }) {
   return (
     <Container>
       <h1>{title}</h1>
