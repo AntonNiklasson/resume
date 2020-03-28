@@ -1,11 +1,9 @@
-import { Fragment } from "react"
 import Media from "react-media"
 import {
   EducationItem,
   ExperienceItem,
   AccountItem,
-  Section,
-  Sidebar
+  Section
 } from "../components"
 
 export function Resume({ experiences, educations, skills, accounts }) {
@@ -13,7 +11,7 @@ export function Resume({ experiences, educations, skills, accounts }) {
     <div
       css={`
         display: grid;
-        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
       `}
     >
       <Section>
@@ -21,7 +19,7 @@ export function Resume({ experiences, educations, skills, accounts }) {
           <ExperienceItem key={experience} {...experience} />
         ))}
       </Section>
-      <Sidebar>
+      <div>
         <Section title="Skills">
           <ul>
             {skills.map(skill => (
@@ -47,7 +45,7 @@ export function Resume({ experiences, educations, skills, accounts }) {
             ) : null
           }
         </Media>
-      </Sidebar>
+      </div>
     </div>
   )
 }

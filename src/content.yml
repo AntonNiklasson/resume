@@ -3,7 +3,7 @@ meta:
   description: Freelancing Software Developer
 
 experiences:
-  - title: Fullstack JavaScript
+  - title: Insights and recommendations
     organization: Klarna
     logo: klarna.png
     time:
@@ -26,7 +26,7 @@ experiences:
       - visual regression testing
       - docker-compose
 
-  - title: Frontend Development
+  - title: Design-systems and SSR
     organization: Creuna
     logo: creuna.png
     time:
@@ -49,7 +49,7 @@ experiences:
       - jest
       - docker-compose
 
-  - title: Fullstack JavaScript
+  - title: Digital tools for journalists
     organization: Bonnier News
     logo: bonniernews.png
     time:
@@ -73,7 +73,7 @@ experiences:
       - docker
       - webpack
 
-  - title: Consulting
+  - title: Consulting in Digitalization
     organization: Netlight
     logo: netlight.png
     time:
@@ -84,7 +84,7 @@ experiences:
         month: 9
         year: 2018
 
-  - title: Frontend Development
+  - title: Arabic streaming service
     organization: Accedo
     logo: accedo.png
     time:
@@ -104,7 +104,7 @@ experiences:
       - css modules
       - jest
 
-  - title: Chromecast Development
+  - title: Chromecast receiver
     organization: Accedo
     logo: accedo.png
     time:
@@ -125,7 +125,7 @@ experiences:
       - chromecast
       - webpack
 
-  - title: React Native
+  - title: Evaluating React Native
     organization: Accedo
     logo: accedo.png
     time:
@@ -146,7 +146,7 @@ experiences:
       - android
       - ios
 
-  - title: Game Development
+  - title: Cross-platform game development
     organization: Attentec
     logo: attentec.jpg
     time:
@@ -163,7 +163,7 @@ experiences:
       - tdd
       - sockets
 
-  - title: JavaScript Development
+  - title: Client-rendering vector maps
     organization: Per & Per
     logo: 2xper.png
     time:

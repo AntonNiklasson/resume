@@ -1,7 +1,6 @@
 export { default as AccountItem } from "./accountItem.js"
 export { MainGrid } from "./atoms.js"
 export { Section } from "./section"
-export { Sidebar } from "./sidebar"
 export { default as EducationItem } from "./educationItem.js"
 export { default as ExperienceItem } from "./experienceItem.js"
 export { default as Footer } from "./footer.js"

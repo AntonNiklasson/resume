@@ -3,6 +3,6 @@ export const lightTheme = {
   backgroundSecondary: "#eeeeee",
   text: "#333333",
   textSecondary: "#666666",
-  border: "#EEE",
+  border: "#AAA",
   accent: "#d46eb1"
 }
