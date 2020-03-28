@@ -12,6 +12,10 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <meta property="og:title" content={props.title} />
+        <link
+          href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap"
+          rel="stylesheet"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

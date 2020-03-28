@@ -16,6 +16,7 @@ const Wrapper = styled.div`
   a {
     text-decoration: underline;
     color: ${p => p.theme.text};
+
     &:hover {
       color: ${p => p.theme.accent};
     }

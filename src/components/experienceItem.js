@@ -2,25 +2,11 @@ import Markdown from "react-markdown"
 import { formatExperienceTime, andify } from "../utils"
 
 const Container = styled.div`
-  margin: 0 0 1.5em 0;
+  margin: 0 0 2em 0;
   page-break-inside: avoid;
 
   &:last-child {
     margin-bottom: 0;
-  }
-`
-const Tech = styled.div`
-  margin: 1em;
-  padding: 0.5em;
-  font-size: 0.9em;
-  border-left: 3px solid ${p => p.theme.border};
-
-  h3 {
-    display: inline;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: ${p => p.theme.textLight};
   }
 `
 
@@ -34,35 +20,36 @@ export default function ExperienceItem({
 }) {
   return (
     <Container>
-      <header
-        css={`
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: space-between;
-
-          time {
-            font-weight: bold;
-            font-size: 0.8em;
-            color: ${p => p.theme.textSecondary};
-          }
-
-          img {
-            margin: 0 0 0 0.5em;
-            height: 1em;
-            border-radius: 0.2em;
-          }
-        `}
-      >
-        <h4>{title}</h4>
-        <time>{formatExperienceTime(time)}</time>
+      <header>
+        <h2>{title}</h2>
         <div
           css={`
             display: flex;
+            flex-flow: row nowrap;
             align-items: center;
+            padding-top: 0.5em;
           `}
         >
-          <h4>{organization}</h4>
-          {logo && <img src={require(`../logos/${logo}`)} />}
+          <time
+            css={`
+              font-size: 0.95em;
+              color: ${p => p.theme.textSecondary};
+              font-weight: bold;
+              margin-right: 2em;
+            `}
+          >
+            {formatExperienceTime(time)}
+          </time>
+          <h3>{organization}</h3>
+          {logo && (
+            <img
+              css={`
+                margin-left: 1em;
+                max-width: 1.5em;
+              `}
+              src={require(`../logos/${logo}`)}
+            />
+          )}
         </div>
       </header>
       <div
@@ -82,10 +69,24 @@ export default function ExperienceItem({
         <Markdown source={description} />
       </div>
       {tech && (
-        <Tech>
-          <h3>Tech: </h3>
-          {andify(tech)}
-        </Tech>
+        <div
+          css={`
+            background: #ddd;
+            margin: 0.5em 0;
+            padding: 0.5em;
+            border-left: 3px solid #aaa;
+          `}
+        >
+          <h4>Tech: </h4>
+          <ul
+            css={`
+              margin: 0;
+              font-size: 0.9em;
+            `}
+          >
+            {andify(tech)}
+          </ul>
+        </div>
       )}
     </Container>
   )

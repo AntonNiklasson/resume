@@ -9,16 +9,13 @@ export const GlobalStyles = createGlobalStyle`
 
 	body {
 		background: ${p => p.theme.background};
-		font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-		@media print {
-			margin: 2cm;
-		}
+                font: 18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	}
 
 	h1,h2,h3,h4,h5,h6 {
 		line-height: 1.2;
-		font-weight: 500;
+                font-weight: normal;
+                font-family: 'DM Serif Text', serif;
 	}
 
 	ul {
