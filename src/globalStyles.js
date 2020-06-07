@@ -32,6 +32,11 @@ export const GlobalStyles = createGlobalStyle`
 		}
 	}
 
+        img {
+                max-width: 100%;
+                border-radius: 3px;
+        }
+
 	@page {
 		size: auto;
 		margin: 0cm;

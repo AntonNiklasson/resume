@@ -21,6 +21,18 @@ export function Header({ title }) {
   return (
     <Container>
       <h1>{title}</h1>
+      <nav
+        css={`
+          a {
+            padding: 1em;
+            text-decoration: none;
+            font-weight: bold;
+          }
+        `}
+      >
+        <a href="#">Contact</a>
+        <a href="#">Download</a>
+      </nav>
     </Container>
   )
 }
