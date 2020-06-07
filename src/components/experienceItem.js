@@ -27,6 +27,7 @@ export default function ExperienceItem({
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+            justify-content: space-between;
             padding-top: 0.5em;
           `}
         >
@@ -40,16 +41,23 @@ export default function ExperienceItem({
           >
             {formatExperienceTime(time)}
           </time>
-          <h3>{organization}</h3>
-          {logo && (
-            <img
-              css={`
-                margin-left: 1em;
-                max-width: 1.5em;
-              `}
-              src={require(`../logos/${logo}`)}
-            />
-          )}
+          <div
+            css={`
+              display: flex;
+              align-items: center;
+            `}
+          >
+            <h3>{organization}</h3>
+            {logo && (
+              <img
+                css={`
+                  margin-left: 0.5em;
+                  max-width: 2em;
+                `}
+                src={require(`../logos/${logo}`)}
+              />
+            )}
+          </div>
         </div>
       </header>
       <div
@@ -69,24 +77,26 @@ export default function ExperienceItem({
         <Markdown source={description} />
       </div>
       {tech && (
-        <div
+        <ul
           css={`
-            background: #ddd;
-            margin: 0.5em 0;
-            padding: 0.5em;
-            border-left: 3px solid #aaa;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 0.85em;
+            padding: 0 1em;
           `}
         >
-          <h4>Tech: </h4>
-          <ul
-            css={`
-              margin: 0;
-              font-size: 0.9em;
-            `}
-          >
-            {andify(tech)}
-          </ul>
-        </div>
+          {tech.map(t => (
+            <li
+              key={t}
+              css={`
+                padding: 0;
+                margin: 0;
+              `}
+            >
+              {t}
+            </li>
+          ))}
+        </ul>
       )}
     </Container>
   )

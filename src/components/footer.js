@@ -16,7 +16,6 @@ const Container = styled.footer`
 export default function Footer() {
   return (
     <Container>
-      <p>Last updated 2020-01-28</p>
       <p>
         Icons from <a href="https://fontawesome.com/license">FontAwesome</a>
       </p>
