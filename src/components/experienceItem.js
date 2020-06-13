@@ -1,5 +1,5 @@
 import Markdown from "react-markdown"
-import { formatExperienceTime, andify } from "../utils"
+import { formatExperienceTime } from "../utils"
 
 const Container = styled.div`
   margin: 0 0 2em 0;
@@ -52,7 +52,7 @@ export default function ExperienceItem({
               <img
                 css={`
                   margin-left: 0.5em;
-                  max-width: 2em;
+                  max-width: 1.5em;
                 `}
                 src={require(`../logos/${logo}`)}
               />
@@ -80,7 +80,7 @@ export default function ExperienceItem({
         <ul
           css={`
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             font-size: 0.85em;
             padding: 0 1em;
           `}
