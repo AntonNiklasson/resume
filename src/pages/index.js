@@ -32,8 +32,6 @@ const Wrapper = styled.div`
 export default function App({ data }) {
   const content = data.allSrcYaml.edges[0].node
 
-  console.log(content)
-
   return (
     <ThemeProvider theme={lightTheme}>
       <GlobalStyles />

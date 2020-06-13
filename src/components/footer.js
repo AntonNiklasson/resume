@@ -14,11 +14,5 @@ const Container = styled.footer`
 `
 
 export default function Footer() {
-  return (
-    <Container>
-      <p>
-        Icons from <a href="https://fontawesome.com/license">FontAwesome</a>
-      </p>
-    </Container>
-  )
+  return <Container></Container>
 }

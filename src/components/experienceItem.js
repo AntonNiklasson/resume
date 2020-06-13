@@ -77,26 +77,41 @@ export default function ExperienceItem({
         <Markdown source={description} />
       </div>
       {tech && (
-        <ul
+        <div
           css={`
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            font-size: 0.85em;
-            padding: 0 1em;
+            background: #eee;
+            padding: 1em;
+            font-size: 0.9em;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0 15px 20px -10px #00000022;
+            margin: 1em 0;
           `}
         >
-          {tech.map(t => (
-            <li
-              key={t}
-              css={`
-                padding: 0;
-                margin: 0;
-              `}
-            >
-              {t}
-            </li>
-          ))}
-        </ul>
+          <h3>Highlights:</h3>
+          <ul
+            css={`
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              font-size: 0.85em;
+              padding: 0 1em;
+              list-style: square;
+            `}
+          >
+            {tech.map(t => (
+              <li
+                key={t}
+                css={`
+                  padding: 0;
+                  margin: 0.2em;
+                  white-space: nowrap;
+                `}
+              >
+                {t}
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </Container>
   )
