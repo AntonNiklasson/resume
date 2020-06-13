@@ -74,7 +74,7 @@ experiences:
       - jest
       - docker-compose
 
-  - title: Digital tools for journalists
+  - title: Publishing Platform and Tooling
     organization: Bonnier News
     logo: bonniernews.png
     time:

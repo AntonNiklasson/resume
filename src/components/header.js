@@ -30,8 +30,7 @@ export function Header({ title }) {
           }
         `}
       >
-        <a href="#">Contact</a>
-        <a href="#">Download</a>
+        <a href="https://antn.se/contact">Contact</a>
       </nav>
     </Container>
   )
