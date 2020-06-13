@@ -20,12 +20,6 @@ export function Resume({ experiences, educations, skills, accounts }) {
         ))}
       </Section>
       <div>
-        <img
-          css={`
-            border: 3px solid #aaa;
-          `}
-          src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
-        />
         <Section title="Skills">
           <ul>
             {skills.map(skill => (
