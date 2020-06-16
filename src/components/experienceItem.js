@@ -79,13 +79,11 @@ export default function ExperienceItem({
       {tech && (
         <div
           css={`
-            background: #eee;
-            padding: 1em;
-            font-size: 0.9em;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            box-shadow: 0 15px 20px -10px #00000022;
-            margin: 1em 0;
+						background: #FAFAFA;
+						border: 1px solid ${p => p.theme.border};
+						border-radius: 3px;
+						margin: 1em;
+						padding: .5em;
           `}
         >
           <h3>Highlights:</h3>

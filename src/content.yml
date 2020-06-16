@@ -12,19 +12,17 @@ experiences:
         year: 2019
       to: null
     description: |
-      Klarna is on a mission to make any payments and banking in general a joy to use. I have been contributing to their work on personal finance management, and now as part of the work on make shopping online smoother.
+      Shopping is a huge area for Klarna moving forward. I am part of a small team working on providing inspiration, recommendation and
+      fresh content to our users. We are working on providing users with the content they might not know that they want yet.
 
-      My role includes frontend development for React Native and web, backend development with Node.js, database design in PostgresQL and integrating with Kafka queue systems.
+      My contributions have been including system architecture, designing the system for recomendations and APIs for consuming that content.
+      We have also been working on internal tooling for curation.
     tech:
       - react
-      - react native
-      - storybook
       - node.js
       - sequelize
       - postgres
       - jest
-      - visual regression testing
-      - docker-compose
 
   - title: Insights and Visualization
     organization: Klarna
@@ -37,19 +35,20 @@ experiences:
         month: 12
         year: 2019
     description: |
-      Klarna is on a mission to make any payments and banking in general a joy to use. I have been contributing to their work on personal finance management, and now as part of the work on make shopping online smoother.
+      Klarna has been working hard to get into the great banking position it is now in. I was part of a team that worked
+      on financial insights such as spending trends and weekly reports. The goal for us was to raise awareness and educate
+      on the topic of finance.
 
-      My role includes frontend development for React Native and web, backend development with Node.js, database design in PostgresQL and integrating with Kafka queue systems.
+      My contributions included frontend work for both native apps and the web. Setting up A/B-tests, integrating our microservices
+      with other teams to source data.
     tech:
       - react
       - react native
       - storybook
       - node.js
-      - sequelize
       - postgres
       - jest
       - visual regression testing
-      - docker-compose
 
   - title: Design-systems and SSR
     organization: Creuna
