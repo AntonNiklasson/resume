@@ -1,7 +1,7 @@
 import Markdown from "react-markdown"
 import { formatExperienceTime } from "../utils"
 
-const Container = styled.div`
+const ExperienceItemContainer = styled.div`
   margin: 0 0 2em 0;
   page-break-inside: avoid;
 
@@ -19,7 +19,7 @@ export default function ExperienceItem({
   tech
 }) {
   return (
-    <Container>
+    <ExperienceItemContainer>
       <header>
         <h2>{title}</h2>
         <div
@@ -79,11 +79,11 @@ export default function ExperienceItem({
       {tech && (
         <div
           css={`
-						background: #FAFAFA;
-						border: 1px solid ${p => p.theme.border};
-						border-radius: 3px;
-						margin: 1em;
-						padding: .5em;
+            background: #fafafa;
+            border: 1px solid ${p => p.theme.border};
+            border-radius: 3px;
+            margin: 1em;
+            padding: 0.5em;
           `}
         >
           <h3>Highlights:</h3>
@@ -111,6 +111,6 @@ export default function ExperienceItem({
           </ul>
         </div>
       )}
-    </Container>
+    </ExperienceItemContainer>
   )
 }
