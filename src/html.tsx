@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
         <meta property="og:title" content={props.title} />
         <link
-          href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500&display=swap"
           rel="stylesheet"
         />
         {props.headComponents}

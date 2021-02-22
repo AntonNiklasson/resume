@@ -9,13 +9,15 @@ export const GlobalStyles = createGlobalStyle`
 
 	body {
 		background: ${p => p.theme.background};
-                font: 18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font: 18px 'Inter', sans-serif;
+		color: #333;
+		white-space: pre-wrap;
 	}
 
-	h1,h2,h3,h4,h5,h6 {
+	h1, h2, h3, h4, h5, h6 {
 		line-height: 1.2;
-                font-weight: normal;
-                font-family: 'DM Serif Text', serif;
+		font-weight: normal;
+		font-family: 'Oswald', sans-serif;
 	}
 
 	ul {
@@ -32,10 +34,10 @@ export const GlobalStyles = createGlobalStyle`
 		}
 	}
 
-        img {
-                max-width: 100%;
-                border-radius: 3px;
-        }
+	img {
+		max-width: 100%;
+		border-radius: 3px;
+	}
 
 	@page {
 		size: auto;

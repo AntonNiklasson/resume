@@ -7,7 +7,7 @@ import { Header, Footer, Resume } from "../components/index.ts"
 
 const Wrapper = styled.div`
   width: 100%;
-  max-width: 21cm;
+  max-width: 700px;
   margin: 1em auto;
   padding: 1em;
   background: ${p => p.theme.white};

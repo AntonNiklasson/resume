@@ -2,11 +2,29 @@ import Markdown from "react-markdown"
 import { formatExperienceTime } from "../utils"
 
 const ExperienceItemContainer = styled.div`
-  margin: 0 0 2em 0;
+  margin: 0;
   page-break-inside: avoid;
+  border-left: 2px solid ${p => p.theme.border};
+  padding: 1em 1em 1em 2em;
+  position: relative;
+
+  &:first-child {
+    border-image: linear-gradient(transparent, ${p => p.theme.border} 3em) 1;
+  }
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 2.5em;
+    left: -0.4em;
+    width: .8em
+    height: .8em
+    border-radius: 50%;
+    background: ${p => p.theme.border};
   }
 `
 
@@ -75,42 +93,12 @@ export default function ExperienceItem({
         `}
       >
         <Markdown source={description} />
+        {tech && (
+          <p>
+            Noteworthy technologies included in this project: {tech.join(", ")}.
+          </p>
+        )}
       </div>
-      {tech && (
-        <div
-          css={`
-            background: #fafafa;
-            border: 1px solid ${p => p.theme.border};
-            border-radius: 3px;
-            margin: 1em;
-            padding: 0.5em;
-          `}
-        >
-          <h3>Highlights:</h3>
-          <ul
-            css={`
-              display: grid;
-              grid-template-columns: repeat(2, 1fr);
-              font-size: 0.85em;
-              padding: 0 1em;
-              list-style: square;
-            `}
-          >
-            {tech.map(t => (
-              <li
-                key={t}
-                css={`
-                  padding: 0;
-                  margin: 0.2em;
-                  white-space: nowrap;
-                `}
-              >
-                {t}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </ExperienceItemContainer>
   )
 }
