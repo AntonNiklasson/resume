@@ -11,8 +11,11 @@ export function andify(list) {
 }
 
 export function formatExperienceTime({ from, to = null }) {
-  const fromString = `${from.month}.${from.year}`
-  const toString = to ? `${to.month}.${to.year}` : ""
+  function padMonth(month) {
+    return month.toString().padStart(2, "0")
+  }
+  const fromString = `${padMonth(from.month)}.${from.year}`
+  const toString = to ? `${padMonth(to.month)}.${to.year}` : ""
 
   return `${fromString} - ${toString}`
 }
