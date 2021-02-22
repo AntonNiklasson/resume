@@ -17,14 +17,16 @@ experiences:
         month: 2
         year: 2021
     description: |
-      I was part of a small team working hard to improve the experience for Milkywire's impacters on the platform. We developed a financial overview, improve the bookkeeping system and improved the content creation flow.
+      I was part of a small team working hard to improve the experience for Milkywire's impacters on the platform. We developed a financial dashboard, improved the internal bookkeeping system and iterated on the content creation flow.
+
+      I implemented features and solved bugs in the entire tech stack. From UI and UX in React Native, to database design and backend integrations.
     tech:
       - react native
       - react
       - fastify
       - postgres
-      - node
-      - tdd
+      - node.js
+      - TDD
 
   - title: Recomendation and Personalization
     organization: Klarna
@@ -37,11 +39,10 @@ experiences:
         month: 9
         year: 2020
     description: |
-      Shopping is a huge area for Klarna moving forward. I am part of a small team working on providing inspiration, recommendation and
-      fresh content to our users. We are working on providing users with the content they might not know that they want yet.
+      I was part of a cross-functional team working on providing inspiration, recommendation and fresh content to millions of users.
+      We built tools for collecting user interests and profiles, an editorial content management system and solutions for other teams to present matching content to each user.
 
-      My contributions have been including system architecture, designing the system for recomendations and APIs for consuming that content.
-      We have also been working on internal tooling for curation.
+      My contributions consisted of system architecure, API integrations, creating the editorial internal tool from scratch, various research and development, and collaborating with other teams.
     tech:
       - react
       - node.js
@@ -60,12 +61,9 @@ experiences:
         month: 12
         year: 2019
     description: |
-      Klarna has been working hard to get into the great banking position it is now in. I was part of a team that worked
-      on financial insights such as spending trends and weekly reports. The goal for us was to raise awareness and educate
-      on the topic of finance.
+      I was part of a team that worked on financial insights such as spending trends, weekly reports, and other experimental features. Our mission was to enlighted, educate and visualise interesting data in each persons personal finance.
 
-      My contributions included frontend work for both native apps and the web. Setting up A/B-tests, integrating our microservices
-      with other teams to source data.
+      My contributions included UI and UX work for both native apps and the web, setting up A/B-tests, backend integrations, and queue system publishing and optimisations.
     tech:
       - react
       - react native
