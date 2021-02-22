@@ -8,10 +8,6 @@ const ExperienceItemContainer = styled.div`
   padding: 1em 1em 1em 2em;
   position: relative;
 
-  &:first-child {
-    border-image: linear-gradient(transparent, ${p => p.theme.border} 3em) 1;
-  }
-
   &:last-child {
     margin-bottom: 0;
   }
