@@ -1,14 +1,16 @@
-import Github from "../icons/github.svg";
-import Linkedin from "../icons/linkedin.svg";
-import Twitter from "../icons/twitter.svg";
-import Javascript from "../icons/javascript.svg";
+import styled from "styled-components"
+
+import Github from "../icons/github.svg"
+import Linkedin from "../icons/linkedin.svg"
+import Twitter from "../icons/twitter.svg"
+import Javascript from "../icons/javascript.svg"
 
 const iconMap = {
   github: Github,
   linkedin: Linkedin,
   twitter: Twitter,
   stackoverflow: Javascript
-};
+}
 
 const Container = styled.span`
   display: inline-flex;
@@ -22,12 +24,12 @@ const Container = styled.span`
     margin: auto;
     fill: CurrentColor;
   }
-`;
+`
 
 export default function Icon({ name }) {
   return (
     <Container>
       {iconMap[name] ? React.createElement(iconMap[name]) : null}
     </Container>
-  );
+  )
 }

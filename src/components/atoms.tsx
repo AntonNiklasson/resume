@@ -1,3 +1,5 @@
+import styled from 'styled-components'
+
 export const MainGrid = styled.main`
   display: grid;
   grid-template-columns: 1fr 2fr;

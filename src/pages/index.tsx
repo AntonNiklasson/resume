@@ -1,49 +1,23 @@
+import React from "react"
 import { graphql } from "gatsby"
-import { ThemeProvider } from "styled-components"
 import Helmet from "react-helmet"
-import theme from "../theme.ts"
-import { GlobalStyles } from "../globalStyles.tsx"
-import { Header, Footer, Resume } from "../components/index.ts"
-
-const Wrapper = styled.div`
-  width: 100%;
-  max-width: 700px;
-  margin: 1em auto;
-  padding: 1em;
-  background: ${p => p.theme.white};
-  color: ${p => p.theme.text};
-
-  a {
-    text-decoration: none;
-    color: ${p => p.theme.text};
-
-    &:hover {
-      color: ${p => p.theme.accent};
-    }
-  }
-
-  @media (max-width: 21cm) {
-    margin: 0;
-    border: none;
-    border-radius: unset;
-  }
-`
+import { Resume } from "../components/index.ts"
 
 export default function App({ data }) {
   const content = data.allSrcYaml.edges[0].node
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
+    <>
       <Helmet>
         <title>{content.title}</title>
       </Helmet>
-      <Wrapper>
-        <Header {...content.meta} />
+      <div className="max-w-lg mx-auto">
+        <header className="py-4">
+          <h1 className="text-2xl">Anton Niklasson | Resume</h1>
+        </header>
         <Resume {...content} />
-        <Footer />
-      </Wrapper>
-    </ThemeProvider>
+      </div>
+    </>
   )
 }
 

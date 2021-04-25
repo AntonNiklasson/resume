@@ -10,18 +10,19 @@
     "pdf": "./scripts/pdf.js"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.5",
     "babel-eslint": "^10.0.1",
     "babel-plugin-import-globals": "^2.0.0",
     "babel-plugin-module-resolver": "^3.2.0",
-    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.1.11",
+    "gatsby-plugin-postcss": "^4.3.0",
     "gatsby-plugin-react-helmet": "^3.0.7",
     "gatsby-plugin-react-svg": "^2.1.0",
-    "gatsby-plugin-styled-components": "^3.0.6",
     "gatsby-source-filesystem": "^2.0.21",
     "gatsby-transformer-yaml": "^2.1.8",
     "http-server": "^0.11.1",
     "lodash": "^4.17.19",
+    "postcss": "^8.2.12",
     "prettier": "^1.19.1",
     "puppeteer": "^1.15.0",
     "react": "^16.8.2",
@@ -29,7 +30,6 @@
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.0.6",
     "react-media": "^1.9.2",
-    "ssh-exec": "^2.0.0",
-    "styled-components": "^4.1.3"
+    "tailwindcss": "^2.1.2"
   }
 }
