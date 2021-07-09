@@ -6,6 +6,13 @@ meta:
     Looking forward I want to become the best possible software developer I can be. That not only includes building beautiful, performant and reliable systems. I will continuously seek to improve the team and the environment that I am a part of. Everything from deployment infrastructure and testing strategies to agile software development and a teams well-being are interesting areas for me to focus on.
 
 experiences:
+  - title: Personalizing Learning
+    organization: Sana Labs
+    time:
+      from:
+        month: 4
+        year: 2021
+
   - title: Software Development
     organization: Milkywire
     logo: milkywire.jpg
